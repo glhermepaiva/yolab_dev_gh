@@ -1,0 +1,36 @@
+@font-face { font-family: TommySoftReg; src: url('../assets/fonts/MADE_Tommy_Soft_Regular.woff'); }
+@font-face { font-family: TommySoftThin; src: url('../assets/fonts/MADE_Tommy_Soft_Thin.woff'); }
+@font-face { font-family: TommySoftMed; src: url('../assets/fonts/MADE_Tommy_Soft_Medium.woff'); }
+@font-face { font-family: TommySoftBold; src: url('../assets/fonts/MADE_Tommy_Soft_Bold.woff'); } 
+
+html,body {
+  padding: 0;
+  margin: 0;
+  font-family: TommySoftReg;
+  text-rendering: optimizeLegibility;
+  background-color: #000;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:focus:not {
+  box-shadow: none;
+  border-bottom: none;
+  outline: none;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}

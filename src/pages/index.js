@@ -35,7 +35,7 @@ export default function LandingPage() {
       </div>
       <div className={styles.welcome}>
         <div>
-          <div className={styles.welcomeTitle}>Welcome to Yo's</div>
+          <div className={styles.welcomeTitle}>Welcome to Yo&apos;s</div>
           <div className={styles.welcomeText}>Empresas são diferentes <br/>tem problemas diferentes.<br/> Não dá mais pra utilizar <br/>a mesma fórmula para todas elas. <br/>Somos uma mix de expertises:<br/> planejamento, criação, consultoria, tecnologia,<br/> distribuição, dados e esteira de produção.<br/> Trabalhamos de uma maneira customizada<br/> na operação, na remuneração e até mesmo <br/>na variação mensal do time de especialistas<br/> envolvidos. Aqui você paga pelo<br/> que você usa e quando usa.<br/> Porque a sua demanda<br/> é a nossa demanda.</div>
         </div>
         <div className={styles.wave2} />

@@ -1,15 +1,66 @@
 import Head from 'next/head'
 import styles from '../styles/index.module.css'
+import * as yup from 'yup'
+import emailjs from 'emailjs-com'
+import { useState } from 'react'
+import ReactLoading from 'react-loading'
 
 export default function LandingPage() {
 
-  const onSubmit = async (e) => {
-    alert("Enviado!")
-    e.preventDefault();
-  }
-
   const ToggleSound = () => {
     alert("Sound on!")
+  }
+
+  const linkedinLink = () => {
+    alert("Abrindo Linkedin...")
+  }
+
+  const twitterLink = () => {
+    alert("Abrindo Twitter...")
+  }
+
+  const facebookLink = () => {
+    alert("Abrindo Facebook...")
+  }
+
+  const schema = yup.object().shape({
+        name: yup.string().required('Nome não pode estar em branco'),
+        email: yup.string().email('Endereço de email inválido').required('Email não pode estar em branco'),
+        message: yup.string().min(3, 'A mensagem deve ter no mínimo 3 caracteres').max(300, 'A mensagem pode ter no máximo 300 caracteres').required('Mensagem não pode estar em branco')
+  })
+
+  const [loading, setLoading] = useState(false)
+
+  const onSubmit = async (e) => {
+      e.preventDefault();
+
+      setLoading(true)
+
+      let formData = {
+            name: e.target[0].value,
+            email: e.target[1].value,
+            message: e.target[2].value,
+      }
+
+      const isValid = await schema.isValid(formData);
+
+      if (isValid) {
+          emailjs.sendForm('service_ibuddku', 'template_yolab', e.target, 'user_qksKqi9BtojdtprKYCtue')
+
+          .then((result) => {
+              console.log(result);
+              alert("Sucesso! Logo entraremos em contato!")
+              window.location.href = "/?uri=";
+          }, (error) => {
+              console.log(error);
+              setLoading(false)
+          });
+
+            
+      } else {
+          alert("Por favor garanta que os campos foram preenchidos corretamente e tente novamente.")
+          setLoading(false)
+      }
   }
 
   return (
@@ -25,9 +76,15 @@ export default function LandingPage() {
       <div className={styles.wave1} />
       <div className={styles.carousel}>
         <div className={styles.carouselLine1} />
-        <div className={styles.carouselText1}>Quer ser mais&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;interessante?</div>
+        <div className={styles.carouselTextLine1}>
+            <span className={styles.carouselText1}>&nbsp;Quer ser mais interessante? Pergunte-me como!&nbsp;</span>
+            <span className={styles.carouselText12}>&nbsp;&nbsp;Quer ser mais interessante? Pergunte-me como!&nbsp;</span>
+        </div>
         <div className={styles.carouselLine2} />
-        <div className={styles.carouselText2}>Honestidade &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vende perfeição</div>
+        <div className={styles.carouselTextLine2}>
+          <div className={styles.carouselText2}>&nbsp;Honestidade vende perfeição, não é mesmo?&nbsp;</div>
+          <div className={styles.carouselText22}>&nbsp;&nbsp;Honestidade vende perfeição, não é mesmo?&nbsp;</div>
+        </div>
         <div className={styles.carouselLine3} />
         <div className={styles.carouselSmartphone} />
         <div className={styles.carouselTenis} />
@@ -43,7 +100,7 @@ export default function LandingPage() {
       </div>
       <div className={styles.form}>
       <div className={styles.wave3} />
-        <div className={styles.formMain}>
+        {loading ? <div className={styles.formLoading}><ReactLoading type={"spinningBubbles"} color={"#aeff02"} height={"10%"} width={"10%"}/></div> : <div className={styles.formMain}>
           <div className={styles.planet} />
           <div className={styles.contactForm}>
             <div className={styles.contactFormTitle}>GET IN TOUCH</div>
@@ -61,12 +118,12 @@ export default function LandingPage() {
             <div className={styles.contactInfoText}>Ou se preferir</div>
             <div className={styles.contactInfoEmail}>yo@yolab.com</div>
             <div className={styles.contactInfoSocial}>
-              <div className={styles.contactInfoSocialIn} />
-              <div className={styles.contactInfoSocialTt} />
-              <div className={styles.contactInfoSocialFb} />
+              <div className={styles.contactInfoSocialIn} onClick={linkedinLink}/>
+              <div className={styles.contactInfoSocialTt} onClick={twitterLink}/>
+              <div className={styles.contactInfoSocialFb} onClick={facebookLink}/>
             </div>
           </div>
-        </div>
+        </div>}
         <div className={styles.footer}>GET READY TO THE NEW // TRUSTED BY: PROVU, MISHA, MARGOUX E DR SHOWS /// YO! INDEPENDENT CREATIVE</div>
       </div>
     </div>

@@ -383,12 +383,13 @@
 
   .wave3 {
     transform: scale(0.6);
-    top: 2300px;
+    top: 2270px;
     left: -95px;
   }
 
   .header {
     transform: scale(0.9);
+    height: 90px;
   }
 
   .carousel {
@@ -411,8 +412,16 @@
   .carouselText1 {
     font-size: 36px;
   }
+
+  .carouselText12 {
+    font-size: 36px;
+  }
   
   .carouselText2 {
+    font-size: 35px;
+  }
+
+  .carouselText22 {
     font-size: 35px;
   }
 
@@ -440,12 +449,12 @@
 
   .welcomeTitle {
     font-size: 30px;
-    margin: -430px 0 0px 160px;
+    margin: -430px 0 0px 130px;
   }
   
   .welcomeText {
     font-size: 14px;
-    margin: 0 0 0 80px;
+    margin: 0 0 0 50px;
     line-height: 22px;
     width: 310px;
     text-align: right;
@@ -459,11 +468,11 @@
   .form {
     display: flex;
     flex-direction: column;
-    margin-top: -750px;
+    margin-top: -800px;
   }
 
   .planet {
-    transform: scale(0.9);
+    transform: scale(0.8);
     margin: 1400px 0 50px -70px;
   }
 
@@ -508,7 +517,7 @@
     font-size: 18px;
     text-align: center;
     width: 250px;
-    margin: 50px 0 80px 80px;
+    margin: 0px 0 80px 60px;
   }
 
 }
@@ -547,6 +556,7 @@
     margin: 10px 0 20px 0;
   }
   
+  
   .carouselLine2 {
     margin: 20px 0 20px 0;
   }
@@ -556,11 +566,19 @@
   }
 
   .carouselText1 {
-    font-size: 36px;
+    font-size: 80px;
+  }
+
+  .carouselText12 {
+    font-size: 80px;
   }
   
   .carouselText2 {
-    font-size: 35px;
+    font-size: 80px;
+  }
+
+  .carouselText22 {
+    font-size: 80px;
   }
 
   .carouselSmartphone {
@@ -689,8 +707,16 @@
   .carouselText1 {
     font-size: 60px;
   }
+
+  .carouselText12 {
+    font-size: 60px;
+  }
   
   .carouselText2 {
+    font-size: 61px;
+  }
+
+  .carouselText22 {
     font-size: 61px;
   }
 
@@ -821,8 +847,16 @@
   .carouselText1 {
     font-size: 62px;
   }
+
+  .carouselText12 {
+    font-size: 62px;
+  }
   
   .carouselText2 {
+    font-size: 64px;
+  }
+
+  .carouselText22 {
     font-size: 64px;
   }
 
@@ -954,7 +988,15 @@
     font-size: 70px;
   }
   
+  .carouselText12 {
+    font-size: 70px;
+  }
+  
   .carouselText2 {
+    font-size: 72px;
+  }
+
+  .carouselText22 {
     font-size: 72px;
   }
 

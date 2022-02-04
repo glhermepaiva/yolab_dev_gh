@@ -72,7 +72,6 @@
   display: inline-block;
   animation: anim 30s linear infinite;
   animation-delay: -7s;
-  color: red;
 }
 
 .carouselText12 {
@@ -81,7 +80,6 @@
   display: inline-block;
   animation: anim2 30s linear infinite;
   animation-delay: 8s;
-  color: green;
 }
 
 @keyframes anim {
@@ -105,7 +103,6 @@
   display: inline-block;
   animation: anim3 20s linear infinite;
   animation-delay: -7s;
-  color: blue;
 }
 
 .carouselText22 {
@@ -114,7 +111,6 @@
   display: inline-block;
   animation: anim4 20s linear infinite;
   animation-delay: 3s;
-  color: yellow;
 }
 
 @keyframes anim3 {

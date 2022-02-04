@@ -74,20 +74,22 @@ export default function LandingPage() {
         <button className={styles.headerSoundButton} onClick={ToggleSound}>SOUND ON</button>
       </div>
       <div className={styles.wave1} />
+      <div className={styles.carouselSmartphone} />
+      <div className={styles.carouselTenis} />
       <div className={styles.carousel}>
         <div className={styles.carouselLine1} />
         <div className={styles.carouselTextLine1}>
-            <span className={styles.carouselText1}>&nbsp;Quer ser mais interessante? Pergunte-me como!&nbsp;</span>
-            <span className={styles.carouselText12}>&nbsp;&nbsp;Quer ser mais interessante? Pergunte-me como!&nbsp;</span>
+            <span className={styles.carouselText1}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
+            <span className={styles.carouselText12}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
         </div>
         <div className={styles.carouselLine2} />
         <div className={styles.carouselTextLine2}>
-          <div className={styles.carouselText2}>&nbsp;Honestidade vende perfeição, não é mesmo?&nbsp;</div>
-          <div className={styles.carouselText22}>&nbsp;&nbsp;Honestidade vende perfeição, não é mesmo?&nbsp;</div>
+          <div className={styles.carouselText2}>&nbsp;Creative Push... Creative Push... Creative Push... &nbsp;</div>
+          <div className={styles.carouselText22}>&nbsp;Creative Push... Creative Push... Creative Push... &nbsp;</div>
         </div>
         <div className={styles.carouselLine3} />
-        <div className={styles.carouselSmartphone} />
-        <div className={styles.carouselTenis} />
+        
+        
         <div className={styles.carouselSeloYo} />
       </div>
       <div className={styles.welcome}>

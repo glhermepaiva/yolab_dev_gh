@@ -33,13 +33,14 @@
 }
 
 .carousel {
-  margin: 200px 0 300px 0;
+  margin: 150px 0 200px 0;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0) 100%);
 }
 
 .carouselLine1 {
@@ -69,16 +70,18 @@
   font-family: TommySoftThin;
   font-size: 88px;
   display: inline-block;
-  animation: anim 20s linear infinite;
+  animation: anim 30s linear infinite;
   animation-delay: -7s;
+  color: red;
 }
 
 .carouselText12 {
   font-family: TommySoftThin;
   font-size: 88px;
   display: inline-block;
-  animation: anim2 20s linear infinite;
-  animation-delay: 3s;
+  animation: anim2 30s linear infinite;
+  animation-delay: 8s;
+  color: green;
 }
 
 @keyframes anim {
@@ -102,6 +105,7 @@
   display: inline-block;
   animation: anim3 20s linear infinite;
   animation-delay: -7s;
+  color: blue;
 }
 
 .carouselText22 {
@@ -110,6 +114,7 @@
   display: inline-block;
   animation: anim4 20s linear infinite;
   animation-delay: 3s;
+  color: yellow;
 }
 
 @keyframes anim3 {
@@ -127,6 +132,9 @@
   width: 414px;
   height: 618px;
   position: absolute;
+  z-index: 1;
+  left: 770px;
+  top: 220px;
 }
 
 .carouselTenis {
@@ -134,8 +142,9 @@
   width: 355px;
   height: 524px;
   position: absolute;
-  top: 350px;
+  top: 300px;
   left: 770px;
+  z-index: 999;
 }
 
 .carouselSeloYo {
@@ -179,6 +188,7 @@
 
 .welcomeImage {
   background-image: url(../assets/leopardo.png);
+  background-position: right;
   width: 707px;
   height: 862px;
 }
@@ -361,7 +371,149 @@
 
 
 /* 320 to 720 - MOBILE */
-@media (min-width: 720px) {
+@media (max-width: 719px) {
+
+  .wave1 {
+    transform: scale(0.5);
+    left: -100px;
+    top: 50px;
+  }
+
+  .wave2 {
+    transform: scale(0.6);
+    top: 900px;
+    left: -30px;
+  }
+
+  .wave3 {
+    transform: scale(0.6);
+    top: 2300px;
+    left: -95px;
+  }
+
+  .header {
+    transform: scale(0.9);
+  }
+
+  .carousel {
+    transform: scale(0.9);
+    margin: 350px 0 0px 0;
+  }
+
+  .carouselLine1 {
+    margin: 10px 0 20px 0;
+  }
+  
+  .carouselLine2 {
+    margin: 20px 0 20px 0;
+  }
+  
+  .carouselLine3 {
+    margin: 20px 0 10px 0;
+  }
+
+  .carouselText1 {
+    font-size: 36px;
+  }
+  
+  .carouselText2 {
+    font-size: 35px;
+  }
+
+  .carouselSmartphone {
+    transform: scale(0.8);
+    left: 0px;
+    top: 100px;
+  }
+
+  .carouselTenis {
+    transform: scale(0.8);
+    top: 175px;
+    left: 30px;
+  }
+  
+  .carouselSeloYo {
+    right: -30px;
+    top: 200px;
+    transform: scale(0.9);
+  }
+
+  .welcome {
+    width: 100vw;
+  }
+
+  .welcomeTitle {
+    font-size: 30px;
+    margin: -430px 0 0px 160px;
+  }
+  
+  .welcomeText {
+    font-size: 14px;
+    margin: 0 0 0 80px;
+    line-height: 22px;
+    width: 310px;
+    text-align: right;
+  }
+
+  .welcomeImage {
+    transform: scale(0.4);
+    margin: 200px 0 0 -500px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-top: -750px;
+  }
+
+  .planet {
+    transform: scale(0.9);
+    margin: 1400px 0 50px -70px;
+  }
+
+  .contactForm {
+    margin: 0px 0 0 -400px;
+  }
+
+  .contactFormTitle {
+    font-size: 42px;
+    margin: 0px 0 50px 0px;
+  }
+  
+  .contactFormText {
+    font-size: 20px;
+    margin: 0 0 50px 0;
+  }
+
+  .formFieldName {
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 50px;
+  }
+  
+  .formFieldEmail {
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 50px;
+  }
+  
+  .formFieldMessage {
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+    margin-bottom: -10px;
+  }
+
+  .contactInfo {
+    margin: 700px 0 0 -350px;
+    transform: scale(0.9);
+  }
+
+  .footer {
+    font-size: 18px;
+    text-align: center;
+    width: 250px;
+    margin: 50px 0 80px 80px;
+  }
 
 }
 
@@ -417,16 +569,18 @@
 
   .carouselSmartphone {
     transform: scale(1.3);
+    left: 180px;
   }
 
   .carouselTenis {
     transform: scale(1.3);
-    top: 30px;
+    top: 360px;
     left: 200px;
   }
   
   .carouselSeloYo {
-    right: 100px;
+    right: -30px;
+    top: 200px;
     transform: scale(0.9);
   }
 
@@ -550,8 +704,13 @@
 
   .carouselTenis {
     transform: scale(0.9);
-    top: 25px;
+    top: 235px;
     left: 440px;
+  }
+
+  .carouselSmartphone {
+    left: 430px;
+    top: 160px;
   }
   
   .carouselSeloYo {
@@ -677,10 +836,15 @@
 
   .carouselTenis {
     transform: scale(0.9);
-    top: 25px;
+    top: 235px;
     left: 500px;
   }
-  
+
+  .carouselSmartphone {
+    left: 500px;
+    top: 160px;
+  }
+
   .carouselSeloYo {
     right: 220px;
     transform: scale(0.9);
@@ -804,8 +968,13 @@
 
   .carouselTenis {
     transform: scale(0.9);
-    top: 25px;
+    top: 240px;
     left: 580px;
+  }
+
+  .carouselSmartphone {
+    left: 550px;
+    top: 160px;
   }
   
   .carouselSeloYo {
@@ -921,14 +1090,27 @@
   .carouselText1 {
     font-size: 75px;
   }
+
+  .carouselText12 {
+    font-size: 75px;
+  }
   
   .carouselText2 {
     font-size: 76px;
   }
 
+  .carouselText22 {
+    font-size: 76px;
+  }
+
   .carouselTenis {
-    top: 25px;
+    top: 235px;
     left: 650px;
+  }
+
+  .carouselSmartphone {
+    left: 650px;
+    top: 160px;
   }
   
   .carouselSeloYo {
@@ -1035,14 +1217,27 @@
   .carouselText1 {
     font-size: 75px;
   }
+
+  .carouselText12 {
+    font-size: 75px;
+  }
   
   .carouselText2 {
     font-size: 76px;
   }
 
+  .carouselText22 {
+    font-size: 76px;
+  }
+
   .carouselTenis {
-    top: 25px;
+    top: 250px;
     left: 730px;
+  }
+
+  .carouselSmartphone {
+    left: 700px;
+    top: 160px;
   }
   
   .carouselSeloYo {

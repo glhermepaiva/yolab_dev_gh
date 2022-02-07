@@ -46,19 +46,19 @@
 .carouselLine1 {
   border: #6e6e6e solid 2px;
   width: 80vw;
-  margin: 10px 0 40px 0;
+  margin: 10px 0 -5px 0;
 }
 
 .carouselLine2 {
   border: #6e6e6e solid 2px;
   width: 80vw;
-  margin: 40px 0 40px 0;
+  margin: 10px 0 -5px 0;
 }
 
 .carouselLine3 {
   border: #6e6e6e solid 2px;
   width: 80vw;
-  margin: 40px 0 10px 0;
+  margin: 0px 0 10px 0;
 }
 
 .carouselTextLine1 {
@@ -68,7 +68,7 @@
 
 .carouselText1 {
   font-family: TommySoftThin;
-  font-size: 88px;
+  font-size: 120px;
   display: inline-block;
   animation: anim 30s linear infinite;
   animation-delay: -7s;
@@ -76,7 +76,7 @@
 
 .carouselText12 {
   font-family: TommySoftThin;
-  font-size: 88px;
+  font-size: 120px;
   display: inline-block;
   animation: anim2 30s linear infinite;
   animation-delay: 8s;
@@ -99,7 +99,7 @@
 
 .carouselText2 {
   font-family: TommySoftThin;
-  font-size: 88px;
+  font-size: 120px;
   display: inline-block;
   animation: anim3 20s linear infinite;
   animation-delay: -7s;
@@ -107,7 +107,7 @@
 
 .carouselText22 {
   font-family: TommySoftThin;
-  font-size: 88px;
+  font-size: 120px;
   display: inline-block;
   animation: anim4 20s linear infinite;
   animation-delay: 3s;
@@ -395,34 +395,35 @@
   .carousel {
     transform: scale(0.9);
     margin: 350px 0 0px 0;
+    height: 730px;
   }
 
   .carouselLine1 {
-    margin: 10px 0 20px 0;
+    margin: 150px 0 0px 0;
   }
   
   .carouselLine2 {
-    margin: 20px 0 20px 0;
+    margin: 10px 0 0px 0;
   }
   
   .carouselLine3 {
-    margin: 20px 0 10px 0;
+    margin: 10px 0 200px 0;
   }
 
   .carouselText1 {
-    font-size: 36px;
+    font-size: 60px;
   }
 
   .carouselText12 {
-    font-size: 36px;
+    font-size: 60px;
   }
   
   .carouselText2 {
-    font-size: 35px;
+    font-size: 60px;
   }
 
   .carouselText22 {
-    font-size: 35px;
+    font-size: 60px;
   }
 
   .carouselSmartphone {
@@ -438,8 +439,8 @@
   }
   
   .carouselSeloYo {
-    right: -30px;
-    top: 200px;
+    right: 90px;
+    top: 480px;
     transform: scale(0.9);
   }
 
@@ -449,7 +450,7 @@
 
   .welcomeTitle {
     font-size: 30px;
-    margin: -430px 0 0px 130px;
+    margin: -500px 0 0px 130px;
   }
   
   .welcomeText {
@@ -566,19 +567,19 @@
   }
 
   .carouselText1 {
-    font-size: 80px;
+    font-size: 120px;
   }
 
   .carouselText12 {
-    font-size: 80px;
+    font-size: 120px;
   }
   
   .carouselText2 {
-    font-size: 80px;
+    font-size: 120px;
   }
 
   .carouselText22 {
-    font-size: 80px;
+    font-size: 120px;
   }
 
   .carouselSmartphone {
@@ -594,7 +595,7 @@
   
   .carouselSeloYo {
     right: -30px;
-    top: 200px;
+    top: 190px;
     transform: scale(0.9);
   }
 
@@ -705,19 +706,19 @@
   }
 
   .carouselText1 {
-    font-size: 60px;
+    font-size: 90px;
   }
 
   .carouselText12 {
-    font-size: 60px;
+    font-size: 90px;
   }
   
   .carouselText2 {
-    font-size: 61px;
+    font-size: 90px;
   }
 
   .carouselText22 {
-    font-size: 61px;
+    font-size: 90px;
   }
 
   .carouselSmartphone {
@@ -758,6 +759,9 @@
   .welcomeImage {
     transform: scale(0.8);
     margin: -50px 0 0 -130px;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .form {
@@ -845,19 +849,19 @@
   }
 
   .carouselText1 {
-    font-size: 62px;
+    font-size: 100px;
   }
 
   .carouselText12 {
-    font-size: 62px;
+    font-size: 100px;
   }
   
   .carouselText2 {
-    font-size: 64px;
+    font-size: 100px;
   }
 
   .carouselText22 {
-    font-size: 64px;
+    font-size: 100px;
   }
 
   .carouselSmartphone {
@@ -985,19 +989,19 @@
   }
 
   .carouselText1 {
-    font-size: 70px;
+    font-size: 100px;
   }
   
   .carouselText12 {
-    font-size: 70px;
+    font-size: 100px;
   }
   
   .carouselText2 {
-    font-size: 72px;
+    font-size: 100px;
   }
 
   .carouselText22 {
-    font-size: 72px;
+    font-size: 100px;
   }
 
   .carouselSmartphone {
@@ -1126,19 +1130,19 @@
   }
 
   .carouselText1 {
-    font-size: 75px;
+    font-size: 100px;
   }
 
   .carouselText12 {
-    font-size: 75px;
+    font-size: 100px;
   }
   
   .carouselText2 {
-    font-size: 76px;
+    font-size: 100px;
   }
 
   .carouselText22 {
-    font-size: 76px;
+    font-size: 100px;
   }
 
   .carouselTenis {
@@ -1253,19 +1257,19 @@
   }
 
   .carouselText1 {
-    font-size: 75px;
+    font-size: 100px;
   }
 
   .carouselText12 {
-    font-size: 75px;
+    font-size: 100px;
   }
   
   .carouselText2 {
-    font-size: 76px;
+    font-size: 100px;
   }
 
   .carouselText22 {
-    font-size: 76px;
+    font-size: 100px;
   }
 
   .carouselTenis {

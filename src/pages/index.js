@@ -84,8 +84,8 @@ export default function LandingPage() {
         </div>
         <div className={styles.carouselLine2} />
         <div className={styles.carouselTextLine2}>
-          <div className={styles.carouselText2}>&nbsp;Creative Push... Creative Push... Creative Push... &nbsp;</div>
-          <div className={styles.carouselText22}>&nbsp;Creative Push... Creative Push... Creative Push... &nbsp;</div>
+          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;</div>
+          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;</div>
         </div>
         <div className={styles.carouselLine3} />
         

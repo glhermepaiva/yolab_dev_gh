@@ -4,6 +4,8 @@ import * as yup from 'yup'
 import emailjs from 'emailjs-com'
 import { useState } from 'react'
 import ReactLoading from 'react-loading'
+import leopard from '../assets/leopardo.png'
+import Lion from '../assets/leão.png'
 
 export default function LandingPage() {
 
@@ -63,6 +65,20 @@ export default function LandingPage() {
       }
   }
 
+  const welcomeImageRandom = Math.round(Math.random())
+
+  function animalImage(){
+    if (welcomeImageRandom === 1){
+      return(
+        <img src={Lion.src} />
+      )
+    } if (welcomeImageRandom === 0){
+      return(
+        <img src={leopard.src} />
+      )
+    }
+  }
+
   return (
     <div className={styles.page}>
       <Head>
@@ -98,7 +114,9 @@ export default function LandingPage() {
           <div className={styles.welcomeText}>Empresas são diferentes <br/>tem problemas diferentes.<br/> Não dá mais pra utilizar <br/>a mesma fórmula para todas elas. <br/>Somos uma mix de expertises:<br/> planejamento, criação, consultoria, tecnologia,<br/> distribuição, dados e esteira de produção.<br/> Trabalhamos de uma maneira customizada<br/> na operação, na remuneração e até mesmo <br/>na variação mensal do time de especialistas<br/> envolvidos. Aqui você paga pelo<br/> que você usa e quando usa.<br/> Porque a sua demanda<br/> é a nossa demanda.</div>
         </div>
         <div className={styles.wave2} />
-        <div className={styles.welcomeImage} />
+        <div className={styles.welcomeImage}>
+          {animalImage()}
+        </div>
       </div>
       <div className={styles.form}>
       <div className={styles.wave3} />

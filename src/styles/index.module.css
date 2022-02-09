@@ -70,8 +70,10 @@
 @keyframes fadetext1 {
   0% {opacity: 1}
   25% {opacity: 1}
+  35% {opacity: 0}
   50% {opacity: 0}
   75% {opacity: 0}
+  85% {opacity: 1}
   100% {opacity: 1}
 }
 
@@ -86,8 +88,10 @@
 @keyframes fadetext2 {
   0% {opacity: 0}
   25% {opacity: 0}
+  35% {opacity: 1}
   50% {opacity: 1}
   75% {opacity: 1}
+  85% {opacity: 0}
   100% {opacity: 0}
 }
 
@@ -193,16 +197,20 @@
 @keyframes anim5 {
   0% {opacity: 1}
   25% {opacity: 1}
+  35% {opacity: 0}
   50% {opacity: 0}
   75% {opacity: 0}
+  85% {opacity: 1}
   100% {opacity: 1}
 }
 
 @keyframes anim6 {
   0% {opacity: 0}
   25% {opacity: 0}
+  35% {opacity: 1}
   50% {opacity: 1}
   75% {opacity: 1}
+  85% {opacity: 0}
   100% {opacity: 0}
 }
 
@@ -603,6 +611,10 @@
     font-size: 20px;
     padding: 5px 0px 5px 0px;
     margin-bottom: -10px;
+  }
+
+  .contactFormButton {
+    z-index: 9999999;
   }
 
   .contactInfo {
@@ -1580,3 +1592,5 @@
   }
 
 }
+
+

@@ -108,10 +108,18 @@ export default function LandingPage() {
             <span className={styles.carouselText1}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
             <span className={styles.carouselText12}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
         </div>
+        <div className={styles.carouselTextLine12}>
+            <span className={styles.carouselText1}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
+            <span className={styles.carouselText12}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
+        </div>
         <div className={styles.carouselLine2} />
         <div className={styles.carouselTextLine2}>
           <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;</div>
           <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;</div>
+        </div>
+        <div className={styles.carouselTextLine22}>
+          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;</div>
+          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;</div>
         </div>
         <div className={styles.carouselLine3} />
         <div className={styles.carouselSeloYo} />

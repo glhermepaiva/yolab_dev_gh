@@ -64,6 +64,31 @@
 .carouselTextLine1 {
   white-space: nowrap;
   width: 100%;
+  animation: fadetext1 30s infinite;
+}
+
+@keyframes fadetext1 {
+  0% {opacity: 1}
+  25% {opacity: 1}
+  50% {opacity: 0}
+  75% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.carouselTextLine12 {
+  position: absolute;
+  top: 120px;
+  white-space: nowrap;
+  width: 100%;
+  animation: fadetext2 30s infinite;
+}
+
+@keyframes fadetext2 {
+  0% {opacity: 0}
+  25% {opacity: 0}
+  50% {opacity: 1}
+  75% {opacity: 1}
+  100% {opacity: 0}
 }
 
 .carouselText1 {
@@ -95,6 +120,15 @@
 .carouselTextLine2 {
   white-space: nowrap;
   width: 100%;
+  animation: fadetext1 30s infinite;
+}
+
+.carouselTextLine22 {
+  position: absolute;
+  top: 250px;
+  white-space: nowrap;
+  width: 100%;
+  animation: fadetext2 30s infinite;
 }
 
 .carouselText2 {

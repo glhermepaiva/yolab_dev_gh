@@ -141,6 +141,35 @@
   top: 300px;
   left: 770px;
   z-index: 999;
+  animation: anim5 30s infinite;
+}
+
+.carouselCerebro {
+  background-image: url(../assets/cerebro.png);
+  width: 386px;
+  height: 553px;
+  position: absolute;
+  top: 300px;
+  left: 720px;
+  z-index: 999;
+  opacity: 0;
+  animation: anim6 30s infinite;
+}
+
+@keyframes anim5 {
+  0% {opacity: 1}
+  25% {opacity: 1}
+  50% {opacity: 0}
+  75% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes anim6 {
+  0% {opacity: 0}
+  25% {opacity: 0}
+  50% {opacity: 1}
+  75% {opacity: 1}
+  100% {opacity: 0}
 }
 
 .carouselSeloYo {
@@ -446,6 +475,12 @@
     top: 175px;
     left: 30px;
   }
+
+  .carouselCerebro {
+    transform: scale(0.8);
+    top: 180px;
+    left: -30px;
+  }
   
   .carouselSeloYo {
     right: 75px;
@@ -611,6 +646,12 @@
     top: 360px;
     left: 200px;
   }
+
+  .carouselCerebro {
+    transform: scale(1.3);
+    top: 320px;
+    left: 120px;
+  }
   
   .carouselSeloYo {
     right: -30px;
@@ -757,6 +798,12 @@
     transform: scale(0.9);
     top: 235px;
     left: 440px;
+  }
+
+  .carouselCerebro {
+    transform: scale(0.9);
+    top: 240px;
+    left: 390px;
   }
 
   .carouselSmartphone {
@@ -910,6 +957,12 @@
     left: 500px;
   }
 
+  .carouselCerebro {
+    transform: scale(0.9);
+    top: 240px;
+    left: 460px;
+  }
+
   .carouselSmartphone {
     left: 500px;
     top: 160px;
@@ -1058,6 +1111,12 @@
     left: 580px;
   }
 
+  .carouselCerebro {
+    transform: scale(0.9);
+    top: 240px;
+    left: 510px;
+  }
+
   .carouselSmartphone {
     left: 550px;
     top: 160px;
@@ -1202,6 +1261,11 @@
     left: 650px;
   }
 
+  .carouselCerebro {
+    top: 240px;
+    left: 600px;
+  }
+
   .carouselSmartphone {
     left: 650px;
     top: 160px;
@@ -1335,6 +1399,11 @@
   .carouselTenis {
     top: 250px;
     left: 730px;
+  }
+
+  .carouselCerebro {
+    top: 250px;
+    left: 650px;
   }
 
   .carouselSmartphone {

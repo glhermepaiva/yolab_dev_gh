@@ -87,37 +87,6 @@ export default function LandingPage() {
       )
     }
   }
-  
-  // const animalImage = () => {
-  //   return(
-  //     <img src={images[welcomeImageRandom]}/>
-  //   )
-  // } 
-
-  // function changeAnimalImage() {
-  //   if (date % 2 === 0){
-  //     setAnimalImage('Lion.src')
-  //   }
-  // }
-
-  // const [randomNumber, setRandomNumber] = useState(0)
-
-  // const welcomeImageRandom = Math.round(Math.random())
-
-  // const imagensWelcome = [leopard, Lion]
-
-  // function animalImage(){
-  //   if (welcomeImageRandom === 1){
-  //     setRandomNumber(1)
-  //     return(
-  //       <img src={imagensWelcome[randomNumber]} />
-  //     )
-  //   } if (welcomeImageRandom === 0){
-  //     return(
-  //       <img src={leopard.src} />
-  //     )
-  //   }
-  // }
 
   return (
     <div className={styles.page}>
@@ -132,6 +101,7 @@ export default function LandingPage() {
       <div className={styles.wave1} />
       <div className={styles.carouselSmartphone} />
       <div className={styles.carouselTenis} />
+      <div className={styles.carouselCerebro} />
       <div className={styles.carousel}>
         <div className={styles.carouselLine1} />
         <div className={styles.carouselTextLine1}>

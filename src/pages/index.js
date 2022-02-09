@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/index.module.css'
 import * as yup from 'yup'
 import emailjs from 'emailjs-com'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ReactLoading from 'react-loading'
 import leopard from '../assets/leopardo.png'
 import Lion from '../assets/leão.png'
@@ -65,11 +65,16 @@ export default function LandingPage() {
       }
   }
 
-  // const [animalImage, setAnimalImage] = useState('leopard.src')
+
   const images = [leopard.src, Lion.src]
+  const [animalImage, setAnimalImage] = useState(0)
   const welcomeImageRandom = Math.round(Math.random())
 
-  console.log(images[welcomeImageRandom])
+  useEffect(() => {
+
+  setAnimalImage(welcomeImageRandom)
+
+}, [])
 
   // const animalImage = () => {
   //   return(
@@ -135,7 +140,7 @@ export default function LandingPage() {
           <div className={styles.welcomeText}>Empresas são diferentes <br/>tem problemas diferentes.<br/> Não dá mais pra utilizar <br/>a mesma fórmula para todas elas. <br/>Somos uma mix de expertises:<br/> planejamento, criação, consultoria, tecnologia,<br/> distribuição, dados e esteira de produção.<br/> Trabalhamos de uma maneira customizada<br/> na operação, na remuneração e até mesmo <br/>na variação mensal do time de especialistas<br/> envolvidos. Aqui você paga pelo<br/> que você usa e quando usa.<br/> Porque a sua demanda<br/> é a nossa demanda.</div>
         </div>
         <div className={styles.wave2} />
-        <img src={images[welcomeImageRandom]} />
+        <img src={images[animalImage]} />
       </div>
       <div className={styles.form}>
       <div className={styles.wave3} />

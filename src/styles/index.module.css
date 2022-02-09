@@ -188,6 +188,16 @@
   height: 862px;
 }
 
+.imageLeopard {
+  position: absolute;
+}
+
+.imageLion {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+}
+
 /********* FORM ************/
 
 .form {

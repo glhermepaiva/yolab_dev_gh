@@ -65,19 +65,46 @@ export default function LandingPage() {
       }
   }
 
-  const welcomeImageRandom = Math.round(Math.random())
+  var today = new Date()
+  var date = today.getSeconds()
+  // const [animalImage, setAnimalImage] = useState('leopard.src')
 
-  function animalImage(){
-    if (welcomeImageRandom === 1){
+  function animalImage() {
+    if (date % 2 === 0){
       return(
-        <img src={Lion.src} />
+        <div className={styles.welcomeImage}>
+          <img src={leopard.src} className={styles.imageLeopard} style={{display: 'none'}}/>
+          <img src={Lion.src} className={styles.imageLion}/>
+        </div>
       )
-    } if (welcomeImageRandom === 0){
+    } else {
       return(
-        <img src={leopard.src} />
+        <div className={styles.welcomeImage}>
+          <img src={leopard.src} className={styles.imageLeopard} />
+          <img src={Lion.src} className={styles.imageLion} style={{display: 'none'}}/>
+        </div>
       )
     }
   }
+
+  // const [randomNumber, setRandomNumber] = useState(0)
+
+  // const welcomeImageRandom = Math.round(Math.random())
+
+  // const imagensWelcome = [leopard, Lion]
+
+  // function animalImage(){
+  //   if (welcomeImageRandom === 1){
+  //     setRandomNumber(1)
+  //     return(
+  //       <img src={imagensWelcome[randomNumber]} />
+  //     )
+  //   } if (welcomeImageRandom === 0){
+  //     return(
+  //       <img src={leopard.src} />
+  //     )
+  //   }
+  // }
 
   return (
     <div className={styles.page}>
@@ -104,8 +131,6 @@ export default function LandingPage() {
           <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;</div>
         </div>
         <div className={styles.carouselLine3} />
-        
-        
         <div className={styles.carouselSeloYo} />
       </div>
       <div className={styles.welcome}>
@@ -114,9 +139,7 @@ export default function LandingPage() {
           <div className={styles.welcomeText}>Empresas são diferentes <br/>tem problemas diferentes.<br/> Não dá mais pra utilizar <br/>a mesma fórmula para todas elas. <br/>Somos uma mix de expertises:<br/> planejamento, criação, consultoria, tecnologia,<br/> distribuição, dados e esteira de produção.<br/> Trabalhamos de uma maneira customizada<br/> na operação, na remuneração e até mesmo <br/>na variação mensal do time de especialistas<br/> envolvidos. Aqui você paga pelo<br/> que você usa e quando usa.<br/> Porque a sua demanda<br/> é a nossa demanda.</div>
         </div>
         <div className={styles.wave2} />
-        <div className={styles.welcomeImage}>
-          {animalImage()}
-        </div>
+        {animalImage()}
       </div>
       <div className={styles.form}>
       <div className={styles.wave3} />

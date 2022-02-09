@@ -190,12 +190,12 @@
 
 .imageLeopard {
   position: absolute;
+  right: 250px;
 }
 
 .imageLion {
   position: absolute;
-  right: 50px;
-  top: 30px;
+  right: 180px;
 }
 
 /********* FORM ************/
@@ -472,9 +472,19 @@
 
   .welcomeImage {
     transform: scale(0.4);
-    margin: 200px 0 0 -500px;
+    margin: 100px 0 0 -450px;
   }
 
+  .imageLeopard {
+    right: -210px;
+    margin-top: 100px;
+  }
+
+  .imageLion {
+    right: -300px;
+    margin-top: 150px;
+  }
+  
   .form {
     display: flex;
     flex-direction: column;
@@ -628,6 +638,15 @@
     margin: 450px 0 0 -600px;
   }
 
+  .imageLeopard {
+    right: 0px;
+  }
+
+  .imageLion {
+    right: 0px;
+    margin-top: 100px;
+  }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -773,6 +792,14 @@
     background-repeat: no-repeat;
   }
 
+  .imageLeopard {
+    right: 0px;
+  }
+
+  .imageLion {
+    right: 0px;
+  }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -911,6 +938,14 @@
   .welcomeImage {
     transform: scale(0.8);
     margin: -50px 0 0 -130px;
+  }
+
+  .imageLeopard {
+    right: 50px;
+  }
+
+  .imageLion {
+    right: 0px;
   }
 
   .form {
@@ -1053,6 +1088,14 @@
     margin: -50px 50px 0 -130px;
   }
 
+  .imageLeopard {
+    right: 80px;
+  }
+
+  .imageLion {
+    right: 0px;
+  }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -1187,6 +1230,14 @@
     margin: -50px 0 0 0;
   }
 
+  .imageLeopard {
+    right: 0px;
+  }
+
+  .imageLion {
+    right: -80px;
+  }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -1312,6 +1363,14 @@
   .welcomeImage {
     transform: scale(0.9);
     margin: -50px 0 0 0;
+  }
+
+  .imageLeopard {
+    right: 100px;
+  }
+
+  .imageLion {
+    right: 0px;
   }
 
   .form {

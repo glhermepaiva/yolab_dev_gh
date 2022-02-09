@@ -498,6 +498,14 @@
     font-size: 60px;
   }
 
+  .carouselTextLine12 {
+    top: 250px;
+  }
+
+  .carouselTextLine22 {
+    top: 345px;
+  }
+
   .carouselSmartphone {
     transform: scale(0.8);
     left: 0px;
@@ -670,6 +678,14 @@
     font-size: 120px;
   }
 
+  .carouselTextLine12 {
+    top: 80px;
+  }
+
+  .carouselTextLine22 {
+    top: 270px;
+  }
+
   .carouselSmartphone {
     transform: scale(1.3);
     left: 180px;
@@ -822,6 +838,14 @@
 
   .carouselText22 {
     font-size: 90px;
+  }
+
+  .carouselTextLine12 {
+    top: 130px;
+  }
+
+  .carouselTextLine22 {
+    top: 250px;
   }
 
   .carouselSmartphone {
@@ -981,6 +1005,14 @@
     font-size: 100px;
   }
 
+  .carouselTextLine12 {
+    top: 120px;
+  }
+
+  .carouselTextLine22 {
+    top: 250px;
+  }
+
   .carouselSmartphone {
     transform: scale(0.9);
   }
@@ -1133,6 +1165,14 @@
 
   .carouselText22 {
     font-size: 100px;
+  }
+
+  .carouselTextLine12 {
+    top: 120px;
+  }
+
+  .carouselTextLine22 {
+    top: 250px;
   }
 
   .carouselSmartphone {
@@ -1290,6 +1330,14 @@
     font-size: 100px;
   }
 
+  .carouselTextLine12 {
+    top: 120px;
+  }
+
+  .carouselTextLine22 {
+    top: 250px;
+  }
+
   .carouselTenis {
     top: 235px;
     left: 650px;
@@ -1430,6 +1478,14 @@
     font-size: 100px;
   }
 
+  .carouselTextLine12 {
+    top: 120px;
+  }
+
+  .carouselTextLine22 {
+    top: 250px;
+  }
+
   .carouselTenis {
     top: 250px;
     left: 730px;
@@ -1522,10 +1578,5 @@
   .contactInfo {
     margin: 150px 0 0 -200px;
   }
-
-}
-
-/******** 1900 and up ********/
-@media (min-width: 1900px) {
 
 }

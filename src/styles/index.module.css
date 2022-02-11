@@ -3,7 +3,7 @@
 .header {
   margin: 0 auto;
   width: 80vw;
-  height: 130px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -21,6 +21,8 @@
   width: 80px;
   height: 25px;
   cursor: pointer;
+  background-color: rgb(47, 48, 47);
+  color: #fff;
 }
 
 .wave1 {
@@ -28,12 +30,12 @@
   width: 390px;
   height: 587px;
   position: absolute;
-  top: 250px;
+  top: 150px;
   z-index: 999;
 }
 
 .carousel {
-  margin: 150px 0 200px 0;
+  margin: 50px 0 200px 0;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -79,7 +81,7 @@
 
 .carouselTextLine12 {
   position: absolute;
-  top: 120px;
+  top: 250px;
   white-space: nowrap;
   width: 100%;
   animation: fadetext2 30s infinite;
@@ -99,16 +101,16 @@
   font-family: TommySoftThin;
   font-size: 120px;
   display: inline-block;
-  animation: anim 30s linear infinite;
-  animation-delay: -13s;
+  animation: anim 160s linear infinite;
+  animation-delay: -74s;
 }
 
 .carouselText12 {
   font-family: TommySoftThin;
   font-size: 120px;
   display: inline-block;
-  animation: anim2 30s linear infinite;
-  animation-delay: 2s;
+  animation: anim2 160s linear infinite;
+  animation-delay: 8s;
 }
 
 @keyframes anim {
@@ -129,7 +131,7 @@
 
 .carouselTextLine22 {
   position: absolute;
-  top: 250px;
+  top: 400px;
   white-space: nowrap;
   width: 100%;
   animation: fadetext2 30s infinite;
@@ -139,16 +141,16 @@
   font-family: TommySoftThin;
   font-size: 120px;
   display: inline-block;
-  animation: anim3 20s linear infinite;
-  animation-delay: -7s;
+  animation: anim3 110s linear infinite;
+  animation-delay: -30s;
 }
 
 .carouselText22 {
   font-family: TommySoftThin;
   font-size: 120px;
   display: inline-block;
-  animation: anim4 20s linear infinite;
-  animation-delay: 3s;
+  animation: anim4 110s linear infinite;
+  animation-delay: 30s;
 }
 
 @keyframes anim3 {
@@ -157,8 +159,8 @@
 }
 
 @keyframes anim4 {
-  0% {transform: translateX(-200%);}
-  100% {transform: translateX(0%);}
+  0% {transform: translateX(-190%);}
+  100% {transform: translateX(10%);}
 }
 
 .carouselSmartphone {
@@ -168,7 +170,7 @@
   position: absolute;
   z-index: 1;
   left: 770px;
-  top: 220px;
+  top: 100px;
 }
 
 .carouselTenis {
@@ -176,7 +178,7 @@
   width: 355px;
   height: 524px;
   position: absolute;
-  top: 300px;
+  top: 180px;
   left: 770px;
   z-index: 999;
   animation: anim5 30s infinite;
@@ -187,7 +189,7 @@
   width: 386px;
   height: 553px;
   position: absolute;
-  top: 300px;
+  top: 180px;
   left: 720px;
   z-index: 999;
   opacity: 0;
@@ -428,13 +430,30 @@
   cursor: pointer;
 }
 
-.footer {
-  text-align: center;
-  font-size: 25px;
-  color: #6e6e6e;
-  margin: 150px 0 70px 0;
+.footerTextLine {
+  white-space: nowrap;
+  width: 72%;
+  margin: 100px 0 50px 290px;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 0) 100%);
 }
 
+.footerText1 {
+  font-size: 25px;
+  font-family: TommySoftThin;
+  display: inline-block;
+  animation: anim 110s linear infinite;
+  animation-delay: -40s;
+  color: #6e6e6e;
+}
+
+.footerText11 {
+  font-size: 25px;
+  color: #6e6e6e;
+  font-family: TommySoftThin;
+  display: inline-block;
+  animation: anim2 110s linear infinite;
+  animation-delay: 16s;
+}
 
 
 
@@ -463,7 +482,7 @@
 
   .wave3 {
     transform: scale(0.6);
-    top: 2270px;
+    top: 2350px;
     left: -95px;
   }
 
@@ -517,18 +536,18 @@
   .carouselSmartphone {
     transform: scale(0.8);
     left: 0px;
-    top: 100px;
+    top: 80px;
   }
 
   .carouselTenis {
     transform: scale(0.8);
-    top: 175px;
+    top: 155px;
     left: 30px;
   }
 
   .carouselCerebro {
     transform: scale(0.8);
-    top: 180px;
+    top: 160px;
     left: -30px;
   }
   
@@ -540,11 +559,12 @@
 
   .welcome {
     width: 100vw;
+    margin-right: -5px;
   }
 
   .welcomeTitle {
     font-size: 30px;
-    margin: -500px 0 0px 130px;
+    margin: -480px 0 15px 130px;
   }
   
   .welcomeText {
@@ -557,7 +577,7 @@
 
   .welcomeImage {
     transform: scale(0.4);
-    margin: 100px 0 0 -450px;
+    margin: 50px 0 0 -450px;
   }
 
   .imageLeopard {
@@ -627,6 +647,13 @@
     text-align: center;
     width: 250px;
     margin: 0px 0 80px 60px;
+  }
+
+  .footerTextLine {
+    white-space: nowrap;
+    width: 72%;
+    margin: 20px 0 70px 60px;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 0) 100%);
   }
 
 }
@@ -701,17 +728,18 @@
   .carouselSmartphone {
     transform: scale(1.3);
     left: 180px;
+    top: 220px;
   }
 
   .carouselTenis {
     transform: scale(1.3);
-    top: 360px;
+    top: 310px;
     left: 200px;
   }
 
   .carouselCerebro {
     transform: scale(1.3);
-    top: 320px;
+    top: 340px;
     left: 120px;
   }
   
@@ -727,13 +755,14 @@
 
   .welcomeTitle {
     font-size: 36px;
-    margin: -450px 0 20px 150px;
+    margin: -400px 0 20px 170px;
   }
   
   .welcomeText {
     font-size: 19px;
-    margin: 0 0 0 150px;
+    margin: 0 0 0 170px;
     line-height: 22px;
+    width: 495px;
   }
 
   .welcomeImage {
@@ -804,6 +833,13 @@
     margin: 70px 0 50px 30px;
   }
 
+  .footerTextLine {
+    white-space: nowrap;
+    width: 72%;
+    margin: 80px 0 70px 130px;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 77%, rgba(0, 0, 0, 0) 100%);
+  }
+
 }
 
 /******* 1200 to 1600 ********/
@@ -833,7 +869,7 @@
 
   .carousel {
     transform: scale(0.9);
-    margin: 100px 0 50px 0;
+    margin: 50px 0 50px 0;
   }
 
   .carouselText1 {
@@ -860,25 +896,22 @@
     top: 250px;
   }
 
-  .carouselSmartphone {
-    transform: scale(0.9);
-  }
-
   .carouselTenis {
     transform: scale(0.9);
-    top: 235px;
+    top: 155px;
     left: 440px;
   }
 
   .carouselCerebro {
     transform: scale(0.9);
-    top: 240px;
+    top: 160px;
     left: 390px;
   }
 
   .carouselSmartphone {
+    transform: scale(0.9);
     left: 430px;
-    top: 160px;
+    top: 80px;
   }
   
   .carouselSeloYo {
@@ -998,7 +1031,7 @@
 
   .carousel {
     transform: scale(0.9);
-    margin: 100px 0 50px 0;
+    margin: 50px 0 50px 0;
   }
 
   .carouselText1 {
@@ -1025,25 +1058,22 @@
     top: 250px;
   }
 
-  .carouselSmartphone {
-    transform: scale(0.9);
-  }
-
   .carouselTenis {
     transform: scale(0.9);
-    top: 235px;
+    top: 155px;
     left: 500px;
   }
 
   .carouselCerebro {
     transform: scale(0.9);
-    top: 240px;
+    top: 160px;
     left: 460px;
   }
 
   .carouselSmartphone {
+    transform: scale(0.9);
     left: 500px;
-    top: 160px;
+    top: 80px;
   }
 
   .carouselSeloYo {
@@ -1160,7 +1190,7 @@
 
   .carousel {
     transform: scale(0.9);
-    margin: 100px 0 50px 0;
+    margin: 50px 0 50px 0;
   }
 
   .carouselText1 {
@@ -1187,25 +1217,22 @@
     top: 250px;
   }
 
-  .carouselSmartphone {
-    transform: scale(0.9);
-  }
-
   .carouselTenis {
     transform: scale(0.9);
-    top: 240px;
+    top: 150px;
     left: 580px;
   }
 
   .carouselCerebro {
     transform: scale(0.9);
-    top: 240px;
+    top: 150px;
     left: 510px;
   }
 
   .carouselSmartphone {
+    transform: scale(0.9);
     left: 550px;
-    top: 160px;
+    top: 70px;
   }
   
   .carouselSeloYo {
@@ -1323,7 +1350,7 @@
 
   .carousel {
     transform: scale(0.9);
-    margin: 100px 0 200px 0;
+    margin: 50px 0 200px 0;
   }
 
   .carouselText1 {
@@ -1351,18 +1378,18 @@
   }
 
   .carouselTenis {
-    top: 235px;
+    top: 175px;
     left: 650px;
   }
 
   .carouselCerebro {
-    top: 240px;
+    top: 180px;
     left: 600px;
   }
 
   .carouselSmartphone {
     left: 650px;
-    top: 160px;
+    top: 100px;
   }
   
   .carouselSeloYo {
@@ -1471,7 +1498,7 @@
 
   .carousel {
     transform: scale(0.9);
-    margin: 100px 0 200px 0;
+    margin: 50px 0 200px 0;
   }
 
   .carouselText1 {
@@ -1499,18 +1526,18 @@
   }
 
   .carouselTenis {
-    top: 250px;
+    top: 190px;
     left: 730px;
   }
 
   .carouselCerebro {
-    top: 250px;
+    top: 190px;
     left: 650px;
   }
 
   .carouselSmartphone {
     left: 700px;
-    top: 160px;
+    top: 100px;
   }
   
   .carouselSeloYo {

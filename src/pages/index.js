@@ -74,7 +74,7 @@ export default function LandingPage() {
 
   setAnimalImage(welcomeImageRandom)
 
-}, [])
+  }, [])
 
   function changeAnimalImage() {
     if (animalImage === 0){
@@ -105,21 +105,21 @@ export default function LandingPage() {
       <div className={styles.carousel}>
         <div className={styles.carouselLine1} />
         <div className={styles.carouselTextLine1}>
-            <span className={styles.carouselText1}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
-            <span className={styles.carouselText12}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
+            <span className={styles.carouselText1}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
+            <span className={styles.carouselText12}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;</span>
         </div>
         <div className={styles.carouselTextLine12}>
-            <span className={styles.carouselText1}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
-            <span className={styles.carouselText12}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
+            <span className={styles.carouselText1}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
+            <span className={styles.carouselText12}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
         </div>
         <div className={styles.carouselLine2} />
         <div className={styles.carouselTextLine2}>
-          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;</div>
-          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;</div>
+          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
         </div>
         <div className={styles.carouselTextLine22}>
-          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;</div>
-          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;</div>
+          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
         </div>
         <div className={styles.carouselLine3} />
         <div className={styles.carouselSeloYo} />
@@ -127,7 +127,7 @@ export default function LandingPage() {
       <div className={styles.welcome}>
         <div>
           <div className={styles.welcomeTitle}>Welcome to Yo&apos;s</div>
-          <div className={styles.welcomeText}>Empresas são diferentes <br/>tem problemas diferentes.<br/> Não dá mais pra utilizar <br/>a mesma fórmula para todas elas. <br/>Somos uma mix de expertises:<br/> planejamento, criação, consultoria, tecnologia,<br/> distribuição, dados e esteira de produção.<br/> Trabalhamos de uma maneira customizada<br/> na operação, na remuneração e até mesmo <br/>na variação mensal do time de especialistas<br/> envolvidos. Aqui você paga pelo<br/> que você usa e quando usa.<br/> Porque a sua demanda<br/> é a nossa demanda.</div>
+          <div className={styles.welcomeText}>Empresas são diferentes, tem problemas diferentes. Não dá mais pra utilizar a mesma fórmula para todas elas. Somos uma mix de expertises: planejamento, criação, consultoria, tecnologia, distribuição, dados e esteira de produção. Trabalhamos de uma maneira customizada na operação, na remuneração e até mesmo na variação mensal do time de especialistas envolvidos. Aqui você paga pelo que você usa e quando usa. Porque a sua demanda é a nossa demanda.</div>
         </div>
         <div className={styles.wave2} />
         <div className={styles.welcomeImage}>
@@ -160,7 +160,10 @@ export default function LandingPage() {
             </div>
           </div>
         </div>}
-        <div className={styles.footer}>GET READY TO THE NEW // TRUSTED BY: PROVU, MISHA, MARGOUX E DR SHOWS /// YO! INDEPENDENT CREATIVE</div>
+        <div className={styles.footerTextLine}>
+          <div className={styles.footerText1}>&nbsp;GET READY TO THE NEW // TRUSTED BY: PROVU, MISHA, MARGOUX E DR SHOWS /// YO! INDEPENDENT CREATIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET READY TO THE NEW // TRUSTED BY: PROVU, MISHA, MARGOUX E DR SHOWS /// YO! INDEPENDENT CREATIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div className={styles.footerText11}>&nbsp;GET READY TO THE NEW // TRUSTED BY: PROVU, MISHA, MARGOUX E DR SHOWS /// YO! INDEPENDENT CREATIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET READY TO THE NEW // TRUSTED BY: PROVU, MISHA, MARGOUX E DR SHOWS /// YO! INDEPENDENT CREATIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
       </div>
     </div>
   )

@@ -107,7 +107,7 @@
   display: inline-block;
   animation: anim 900s linear infinite;
   animation-delay: -442s;
-  color: red;
+  /* color: red; */
 }
 
 .carouselText12 {
@@ -116,7 +116,7 @@
   display: inline-block;
   animation: anim2 900s linear infinite;
   animation-delay: 8s;
-  color: green;
+  /* color: green; */
 }
 
 @keyframes anim {
@@ -149,7 +149,7 @@
   display: inline-block;
   animation: anim3 600s linear infinite;
   animation-delay: -17s;
-  color: red;
+  /* color: red; */
 }
 
 .carouselText22 {
@@ -158,7 +158,7 @@
   display: inline-block;
   animation: anim4 600s linear infinite;
   animation-delay: 310s;
-  color: green;
+  /* color: green; */
 }
 
 @keyframes anim3 {

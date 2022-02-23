@@ -401,6 +401,12 @@
   width: 315px;
   height: 323px;
   margin: 400px 0 0 -100px;
+  animation: anim11 10s linear infinite;
+}
+
+@keyframes anim11 {
+  from {transform:rotate(0deg)}
+  to {transform: rotate(360deg);}
 }
 
 .planet {
@@ -410,6 +416,15 @@
   position: absolute;
   top: 2300px;
   left: 400px;
+  animation: anim12 20s linear infinite;
+}
+
+@keyframes anim12 {
+  0% {transform: translateX(-40%);}
+  25% {transform: translateY(20%);}
+  50% {transform: translateX(20%);}
+  75% {transform: translateY(-40%);}
+  100% {transform: translateX(-40%);}
 }
 
 .contactForm {

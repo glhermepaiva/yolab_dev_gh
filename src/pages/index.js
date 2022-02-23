@@ -5,24 +5,24 @@ import emailjs from 'emailjs-com'
 import { useState, useEffect } from 'react'
 import ReactLoading from 'react-loading'
 import leopard from '../assets/leopardo.png'
+import relogioesq from '../assets/relogioesq.png'
+import relogiodir from '../assets/relogiodir.png'
 import Lion from '../assets/leão.png'
+import raios from '../assets/raios.png'
+import { Howl } from 'howler'
 
 export default function LandingPage() {
 
-  const ToggleSound = () => {
-    alert("Sound on!")
-  }
-
   const linkedinLink = () => {
-    alert("Abrindo Linkedin...")
+    window.open('https://www.linkedin.com/company/yoagencia/');
   }
 
-  const twitterLink = () => {
-    alert("Abrindo Twitter...")
+  const instaLink = () => {
+    window.open('https://www.instagram.com/yoagencia/');
   }
 
   const facebookLink = () => {
-    alert("Abrindo Facebook...")
+    window.open('https://www.facebook.com/yoagencia/');
   }
 
   const schema = yup.object().shape({
@@ -65,7 +65,6 @@ export default function LandingPage() {
       }
   }
 
-
   const images = [leopard.src, Lion.src]
   const [animalImage, setAnimalImage] = useState(0)
   const welcomeImageRandom = Math.round(Math.random())
@@ -79,13 +78,37 @@ export default function LandingPage() {
   function changeAnimalImage() {
     if (animalImage === 0){
       return(
-        <img src={images[animalImage]} className={styles.imageLeopard}/>
+        <div>
+          <img src={images[animalImage]} className={styles.imageLeopard}/>
+          <img src={relogioesq.src} className={styles.relogioesq}/>
+          <img src={relogiodir.src} className={styles.relogiodir}/>
+        </div>
       )
     } if (animalImage === 1){
       return(
-        <img src={images[animalImage]} className={styles.imageLion}/>
+        <div>
+          <img src={images[animalImage]} className={styles.imageLion}/>
+          <img src={raios.src} className={styles.raios}/>
+        </div>
       )
     }
+  }
+
+  const [soundOn, setSoundOn] = useState(false)
+
+  const sound = new Howl({
+    src: ['https://cdn.pixabay.com/download/audio/2021/02/01/audio_3620719b92.mp3?filename=moonlight-2526.mp3'],
+    volume: 0.1,
+    loop: true,
+  });
+
+  function turnSoundOn(){
+    sound.play(),
+    setSoundOn(true)
+  }
+
+  function turnSoundOff(){
+    window.location.reload();
   }
 
   return (
@@ -96,7 +119,7 @@ export default function LandingPage() {
       </Head>
       <div className={styles.header}>
         <div className={styles.headerLogo}>YO! LAB</div>
-        <button className={styles.headerSoundButton} onClick={ToggleSound}>SOUND ON</button>
+        {soundOn ? <button className={styles.headerSoundButton} onClick={() => turnSoundOff()}>SOUND OFF</button> : <button className={styles.headerSoundButton} onClick={() => turnSoundOn()}>SOUND ON</button>}
       </div>
       <div className={styles.wave1} />
       <div className={styles.carouselSmartphone} />
@@ -105,24 +128,27 @@ export default function LandingPage() {
       <div className={styles.carousel}>
         <div className={styles.carouselLine1} />
         <div className={styles.carouselTextLine1}>
-            <span className={styles.carouselText1}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;</span>
-            <span className={styles.carouselText12}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;</span>
+            <span className={styles.carouselText1}>&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;</span>
+            <span className={styles.carouselText12}>&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Planejamento Estratégico&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Criação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mídia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Produção Digital&nbsp;&nbsp;</span>
         </div>
         <div className={styles.carouselTextLine12}>
-            <span className={styles.carouselText1}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
-            <span className={styles.carouselText12}>&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;&nbsp;&nbsp; Sua demanda é nossa demanda.&nbsp;</span>
+            <span className={styles.carouselText1}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;</span>
+            <span className={styles.carouselText12}>&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;Honestidade vende, perfeição afasta. Honestidade vende, perfeição afasta.&nbsp;&nbsp;</span>
         </div>
         <div className={styles.carouselLine2} />
         <div className={styles.carouselTextLine2}>
+          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dados&nbsp;&nbsp;&nbsp;Growth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+        <div className={styles.carouselTextLine22}>
           <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;</div>
           <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;Creative Push&nbsp;&nbsp;&nbsp;</div>
         </div>
-        <div className={styles.carouselTextLine22}>
-          <div className={styles.carouselText2}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-          <div className={styles.carouselText22}>&nbsp;&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;One Stop Shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-        </div>
         <div className={styles.carouselLine3} />
-        <div className={styles.carouselSeloYo} />
+        <div>
+          <div className={styles.carouselSeloYoFundo}></div>
+          <div className={styles.carouselSeloYoLogo}></div>
+        </div>
       </div>
       <div className={styles.welcome}>
         <div>
@@ -130,14 +156,19 @@ export default function LandingPage() {
           <div className={styles.welcomeText}>Empresas são diferentes, tem problemas diferentes. Não dá mais pra utilizar a mesma fórmula para todas elas. Somos uma mix de expertises: planejamento, criação, consultoria, tecnologia, distribuição, dados e esteira de produção. Trabalhamos de uma maneira customizada na operação, na remuneração e até mesmo na variação mensal do time de especialistas envolvidos. Porque a sua demanda é a nossa demanda.</div>
         </div>
         <div className={styles.wave2} />
-        <div className={styles.welcomeImage}>
-          {changeAnimalImage()}
+        <div>
+          <div className={styles.welcomeImage}>
+            {changeAnimalImage()}
+          </div>
         </div>
       </div>
       <div className={styles.form}>
       <div className={styles.wave3} />
         {loading ? <div className={styles.formLoading}><ReactLoading type={"spinningBubbles"} color={"#aeff02"} height={"10%"} width={"10%"}/></div> : <div className={styles.formMain}>
-          <div className={styles.planet} />
+          <div>
+            <div className={styles.orbit}></div>
+            <div className={styles.planet}></div>
+          </div>
           <div className={styles.contactForm}>
             <div className={styles.contactFormTitle}>GET IN TOUCH</div>
             <div className={styles.contactFormText}>Escreva aqui</div>
@@ -155,7 +186,7 @@ export default function LandingPage() {
             <div className={styles.contactInfoEmail}>yo@yolab.com</div>
             <div className={styles.contactInfoSocial}>
               <div className={styles.contactInfoSocialIn} onClick={linkedinLink}/>
-              <div className={styles.contactInfoSocialTt} onClick={twitterLink}/>
+              <div className={styles.contactInfoSocialTt} onClick={instaLink}/>
               <div className={styles.contactInfoSocialFb} onClick={facebookLink}/>
             </div>
           </div>

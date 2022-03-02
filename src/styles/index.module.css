@@ -447,7 +447,7 @@
   0% {transform: translateX(0%);}
   25% {transform: translateY(-25%) translateX(-10%) rotate(10deg);}
   50% {transform: translateX(10%) rotate(-45deg);}
-  75% {transform: translateX(-20%) translateY(-10%) rotate(10deg);}
+  75% {transform: translateX(-15%) translateY(-10%) rotate(10deg);}
   100% {transform: translateX(0%);}
 }
 

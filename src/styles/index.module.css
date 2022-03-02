@@ -187,22 +187,22 @@
 
 .carouselTenis {
   background-image: url(../assets/tenis.png);
-  width: 355px;
-  height: 524px;
+  width: 448px;
+  height: 680px;
   position: absolute;
-  top: 180px;
-  left: 770px;
+  top: 50px;
+  left: 790px;
   z-index: 999;
   animation: anim5 60s infinite;
 }
 
 .carouselCerebro {
   background-image: url(../assets/cerebro.png);
-  width: 386px;
-  height: 553px;
+  width: 504px;
+  height: 788px;
   position: absolute;
-  top: 180px;
-  left: 720px;
+  top: 75px;
+  left: 725px;
   z-index: 999;
   opacity: 0;
   animation: anim6 60s infinite;

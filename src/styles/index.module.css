@@ -240,7 +240,7 @@
   top: 300px;
   right: 400px;
   z-index: 9;
-  animation: anim7 30s linear infinite;
+  animation: anim7 20s linear infinite;
 }
 
 @keyframes anim7 {
@@ -294,7 +294,7 @@
 @keyframes wave2 {
   0% {transform: translateY(0%);}
   33% {transform: translateY(-50%);}
-  66% {transform: translateY(70%);}
+  66% {transform: translateY(50%);}
   100% {transform: translateY(0%);}
 }
 
@@ -395,12 +395,12 @@
   position: absolute;
   top: 2020px;
   left: 0;
-  animation: wave3 10s infinite linear;
+  animation: wave3 12s infinite linear;
 }
 
 @keyframes wave3 {
   0% {transform: translateY(0%);}
-  33% {transform: translateY(40%);}
+  33% {transform: translateY(90%);}
   80% {transform: translateY(-90%);}
   100% {transform: translateY(0%);}
 }
@@ -445,9 +445,9 @@
 
 @keyframes anim12 {
   0% {transform: translateX(0%);}
-  25% {transform: translateY(-25%) rotate(10deg);}
+  25% {transform: translateY(-25%) translateX(-10%) rotate(10deg);}
   50% {transform: translateX(10%) rotate(-45deg);}
-  75% {transform: translateX(-10%) translateY(-10%) rotate(10deg);}
+  75% {transform: translateX(-20%) translateY(-10%) rotate(10deg);}
   100% {transform: translateX(0%);}
 }
 
@@ -707,8 +707,8 @@
   }
   
   .carouselSeloYoLogo {
-    top: 540px;
-    right: 130px;
+    top: 530px;
+    right: 120px;
     transform: scale(0.9);
   }
   
@@ -849,7 +849,7 @@
 
   .wave1 {
     transform: scale(0.5);
-    left: -100px;
+    left: -20px;
     top: 50px;
   }
 
@@ -862,7 +862,7 @@
   .wave3 {
     transform: scale(0.6);
     top: 1600px;
-    left: -95px;
+    left: -20px;
   }
 
   .header {
@@ -936,8 +936,8 @@
   }
   
   .carouselSeloYoLogo {
-    top: 345px;
-    right: 25px;
+    top: 340px;
+    right: 15px;
     transform: scale(0.9);
   }
   
@@ -1143,8 +1143,8 @@
   }
   
   .carouselSeloYoLogo {
-    top: 210px;
-    right: 205px;
+    top: 200px;
+    right: 195px;
     transform: scale(0.9);
   }
 
@@ -1340,8 +1340,8 @@
   }
   
   .carouselSeloYoLogo {
-    top: 210px;
-    right: 255px;
+    top: 200px;
+    right: 245px;
   }
 
   .welcome {
@@ -1531,8 +1531,8 @@
   }
   
   .carouselSeloYoLogo {
-    top: 210px;
-    right: 355px;
+    top: 200px;
+    right: 345px;
   }
 
   .welcome {
@@ -1720,8 +1720,8 @@
   }
   
   .carouselSeloYoLogo {
-    top: 210px;
-    right: 355px;
+    top: 200px;
+    right: 345px;
   }
 
   .welcome {
@@ -1896,8 +1896,8 @@
   }
   
   .carouselSeloYoFundo {
-    top: 140px;
-    right: 400px;
+    top: 150px;
+    right: 410px;
   }
   
   .carouselSeloYoLogo {

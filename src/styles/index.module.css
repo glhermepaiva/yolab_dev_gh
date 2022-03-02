@@ -33,6 +33,13 @@
   position: absolute;
   top: 150px;
   z-index: 999;
+  animation: wave1 10s infinite linear;
+}
+
+@keyframes wave1 {
+  0% {transform: translateY(0%);}
+  50% {transform: translateY(70%);}
+  100% {transform: translateY(0%);}
 }
 
 .carousel {
@@ -67,7 +74,7 @@
 .carouselTextLine1 {
   white-space: nowrap;
   width: 100%;
-  animation: fadetext1 30s infinite;
+  animation: fadetext1 60s infinite;
 }
 
 @keyframes fadetext1 {
@@ -87,7 +94,7 @@
   top: 250px;
   white-space: nowrap;
   width: 100%;
-  animation: fadetext2 30s infinite;
+  animation: fadetext2 60s infinite;
 }
 
 @keyframes fadetext2 {
@@ -131,7 +138,7 @@
 .carouselTextLine2 {
   white-space: nowrap;
   width: 100%;
-  animation: fadetext1 30s infinite;
+  animation: fadetext1 60s infinite;
 }
 
 .carouselTextLine22 {
@@ -139,7 +146,7 @@
   top: 400px;
   white-space: nowrap;
   width: 100%;
-  animation: fadetext2 30s infinite;
+  animation: fadetext2 60s infinite;
 }
 
 .carouselText2 {
@@ -186,7 +193,7 @@
   top: 180px;
   left: 770px;
   z-index: 999;
-  animation: anim5 30s infinite;
+  animation: anim5 60s infinite;
 }
 
 .carouselCerebro {
@@ -198,7 +205,7 @@
   left: 720px;
   z-index: 999;
   opacity: 0;
-  animation: anim6 30s infinite;
+  animation: anim6 60s infinite;
 }
 
 @keyframes anim5 {
@@ -227,13 +234,13 @@
 
 .carouselSeloYoFundo {
   background-image: url(../assets/selofundo.png);
-  width: 237px;
-  height: 232px;
+  width: 216px;
+  height: 216px;
   position: absolute;
   top: 300px;
   right: 400px;
   z-index: 9;
-  animation: anim7 60s linear infinite;
+  animation: anim7 30s linear infinite;
 }
 
 @keyframes anim7 {
@@ -243,11 +250,11 @@
 
 .carouselSeloYoLogo {
   background-image: url(../assets/selologo.png);
-  width: 127px;
-  height: 92px;
+  width: 128px;
+  height: 93px;
   position: absolute;
-  top: 370px;
-  right: 455px;
+  top: 360px;
+  right: 445px;
   z-index: 999999;
 }
 
@@ -281,7 +288,16 @@
   position: absolute;
   top: 1220px;
   left: 0;
+  animation: wave2 15s infinite linear;
 }
+
+@keyframes wave2 {
+  0% {transform: translateY(0%);}
+  33% {transform: translateY(-50%);}
+  66% {transform: translateY(70%);}
+  100% {transform: translateY(0%);}
+}
+
 
 .welcomeImage {
   background-position: right;
@@ -323,15 +339,15 @@
 
 @keyframes anim9 {
   0% {transform: translateX(0%) translateY(0%);}
-  5% {transform: translateX(20%) translateY(-50%) rotate(-45deg);}
-  10% {transform: translateX(-40%) translateY(-100%) rotate(10deg);}
-  15% {transform: translateX(60%) translateY(-150%) rotate(45deg);}
-  20% {transform: translateX(-80%) translateY(-200%) rotate(10deg);}
-  25% {transform: translateX(100%) translateY(-250%) rotate(-45deg);}
-  30% {transform: translateX(-80%) translateY(-200%) rotate(10deg);}
-  35% {transform: translateX(60%) translateY(-150%) rotate(45deg);}
-  40% {transform: translateX(-40%) translateY(-100%) rotate(10deg);}
-  45% {transform: translateX(20%) translateY(-50%) rotate(-45deg);}
+  5% {transform: translateX(20%) translateY(-20%) rotate(-45deg);}
+  10% {transform: translateX(-40%) translateY(-40%) rotate(10deg);}
+  15% {transform: translateX(60%) translateY(-60%) rotate(45deg);}
+  20% {transform: translateX(-80%) translateY(-80%) rotate(10deg);}
+  25% {transform: translateX(100%) translateY(-100%) rotate(-45deg);}
+  30% {transform: translateX(-80%) translateY(-80%) rotate(10deg);}
+  35% {transform: translateX(60%) translateY(-60%) rotate(45deg);}
+  40% {transform: translateX(-40%) translateY(-40%) rotate(10deg);}
+  45% {transform: translateX(20%) translateY(-20%) rotate(-45deg);}
   50% {transform: translateX(0%) translateY(0%) ;}
   55% {transform: translateX(20%) translateY(50%) rotate(10deg);}
   60% {transform: translateX(40%) translateY(100%) rotate(45deg);}
@@ -379,6 +395,14 @@
   position: absolute;
   top: 2020px;
   left: 0;
+  animation: wave3 10s infinite linear;
+}
+
+@keyframes wave3 {
+  0% {transform: translateY(0%);}
+  33% {transform: translateY(40%);}
+  80% {transform: translateY(-90%);}
+  100% {transform: translateY(0%);}
 }
 
 .formMain {
@@ -415,16 +439,16 @@
   height: 180px;
   position: absolute;
   top: 2300px;
-  left: 400px;
-  animation: anim12 20s linear infinite;
+  left: 380px;
+  animation: anim12 10s linear infinite;
 }
 
 @keyframes anim12 {
-  0% {transform: translateX(-40%);}
-  25% {transform: translateY(20%);}
-  50% {transform: translateX(20%);}
-  75% {transform: translateY(-40%);}
-  100% {transform: translateX(-40%);}
+  0% {transform: translateX(0%);}
+  25% {transform: translateY(-25%) rotate(10deg);}
+  50% {transform: translateX(10%) rotate(-45deg);}
+  75% {transform: translateX(-10%) translateY(-10%) rotate(10deg);}
+  100% {transform: translateX(0%);}
 }
 
 .contactForm {
@@ -936,7 +960,7 @@
     font-size: 19px;
     margin: 0 0 0 170px;
     line-height: 27px;
-    width: 495px;
+    width: 493px;
   }
 
   .welcomeImage {
@@ -1137,7 +1161,7 @@
     font-size: 17px;
     margin: 0 0 0 200px;
     line-height: 25px;
-    width: 340px;
+    width: 330px;
   }
 
   .welcomeImage {
@@ -1333,7 +1357,7 @@
     font-size: 17px;
     margin: 0 0 0 200px;
     line-height: 26px;
-    width: 420px;
+    width: 400px;
   }
 
   .welcomeImage {
@@ -1524,7 +1548,7 @@
     font-size: 17px;
     margin: 0 0 0 250px;
     line-height: 27px;
-    width: 420px;
+    width: 400px;
   }
 
   .welcomeImage {

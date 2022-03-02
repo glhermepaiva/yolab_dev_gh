@@ -153,7 +153,7 @@ export default function LandingPage() {
       <div className={styles.welcome}>
         <div>
           <div className={styles.welcomeTitle}>Welcome to Yo&apos;s</div>
-          <div className={styles.welcomeText}>Empresas são diferentes, tem problemas diferentes. Não dá mais pra utilizar a mesma fórmula para todas elas. Somos uma mix de expertises: planejamento, criação, consultoria, tecnologia, distribuição, dados e esteira de produção. Trabalhamos de uma maneira customizada na operação, na remuneração e até mesmo na variação mensal do time de especialistas envolvidos. Porque a sua demanda é a nossa demanda.</div>
+          <div className={styles.welcomeText}>Empresas são diferentes, tem problemas diferentes. Não dá mais pra utilizar a mesma fórmula para todas elas. Somos uma mix de expertises: planejamento, criação, consultoria, tecnologia, distribuição, dados e esteira de produção. Seu negócio é o nosso ponto de partida, por isso trabalhamos de uma maneira customizada na operação, na remuneração e até mesmo na variação mensal do time de especialistas envolvidos. Priorizamos ações à partir do seu potencia de retorno. Porque a sua demanda é a nossa demanda.</div>
         </div>
         <div className={styles.wave2} />
         <div>

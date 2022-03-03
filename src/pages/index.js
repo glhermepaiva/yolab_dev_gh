@@ -69,9 +69,16 @@ export default function LandingPage() {
   const [animalImage, setAnimalImage] = useState(0)
   const welcomeImageRandom = Math.round(Math.random())
 
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
   useEffect(() => {
 
   setAnimalImage(welcomeImageRandom)
+
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
 
   }, [])
 
@@ -93,6 +100,101 @@ export default function LandingPage() {
       )
     }
   }
+
+  function useWindowSize() {
+    const [windowSize, setWindowSize] = useState({
+      width: undefined,
+      height: undefined,
+    });
+  
+    useEffect(() => {
+      
+        function handleResize() {
+          setWindowSize({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          });
+        }
+      
+        window.addEventListener("resize", handleResize);
+       
+        handleResize();
+      
+        return () => window.removeEventListener("resize", handleResize);
+
+    }, []);
+
+    return windowSize;
+  }
+
+  const size = useWindowSize();
+
+  function renderObjectSize() {
+    if (size.width < 720){
+        return (
+            <div className={styles.drawingGirl} >
+                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.4)`}} />
+                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.4)`}} />
+                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.4)`}} />
+                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.4)`}} />
+                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.1}px) scale(0.4)`}} />
+                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.4)`}} />
+                    <div className={styles.drawingGirlTable} />
+            </div>
+        )
+    }
+
+    if (size.width >= 720 && size.width < 1200){
+        return (
+            <div className={styles.drawingGirl} >
+                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.6)`}} />
+                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.6)`}} />
+                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.6)`}} />
+                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.6)`}} />
+                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.3}px) scale(0.6)`}} />
+                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.6)`}} />
+                    <div className={styles.drawingGirlTable} />
+            </div>
+        )
+    }
+
+    if (size.width >= 1200 && size.width < 1600){
+        return (
+            <div className={styles.drawingGirl} >
+                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.7)`}} />
+                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.7)`}} />
+                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.7)`}} />
+                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.7)`}} />
+                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.3}px) scale(0.7)`}} />
+                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.7)`}} />
+                    <div className={styles.drawingGirlTable} />
+            </div>
+        )
+    }
+
+    if (size.width >= 1600 && size.width < 1900){
+        return (
+            <div className={styles.drawingGirl} >
+                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.9)`}} />
+                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.9)`}} />
+                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.9)`}} />
+                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.9)`}} />
+                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.3}px) scale(0.9)`}} />
+                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.9)`}} />
+                    <div className={styles.drawingGirlTable} />
+            </div>
+        )
+    }
+
+    if (size.width >= 1900){
+        return (
+            <div className={styles.drawingGirl} >
+                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.9)`}} />
+            </div>
+        )
+    }
+}
+
 
   const [soundOn, setSoundOn] = useState(false)
 
@@ -121,7 +223,7 @@ export default function LandingPage() {
         <div className={styles.headerLogo}>YO! LAB</div>
         {soundOn ? <button className={styles.headerSoundButton} onClick={() => turnSoundOff()}>SOUND OFF</button> : <button className={styles.headerSoundButton} onClick={() => turnSoundOn()}>SOUND ON</button>}
       </div>
-      <div className={styles.wave1} />
+      <div className={styles.wave1} style={{transform: `translateY(${offsetY * 0.3}px)`}} />
       <div className={styles.carouselSmartphone} />
       <div className={styles.carouselTenis} />
       <div className={styles.carouselCerebro} />
@@ -155,7 +257,7 @@ export default function LandingPage() {
           <div className={styles.welcomeTitle}>Welcome to Yo&apos;s</div>
           <div className={styles.welcomeText}>Empresas são diferentes, tem problemas diferentes. Não dá mais pra utilizar a mesma fórmula para todas elas. Somos uma mix de expertises: planejamento, criação, consultoria, tecnologia, distribuição, dados e esteira de produção. Seu negócio é o nosso ponto de partida, por isso trabalhamos de uma maneira customizada na operação, na remuneração e até mesmo na variação mensal do time de especialistas envolvidos. Priorizamos ações à partir do seu potencia de retorno. Porque a sua demanda é a nossa demanda.</div>
         </div>
-        <div className={styles.wave2} />
+        <div className={styles.wave2} style={{transform: `translateY(${offsetY * -0.3}px)`}} />
         <div>
           <div className={styles.welcomeImage}>
             {changeAnimalImage()}
@@ -163,7 +265,7 @@ export default function LandingPage() {
         </div>
       </div>
       <div className={styles.form}>
-      <div className={styles.wave3} />
+      <div className={styles.wave3} style={{transform: `translateY(${offsetY * 0.4}px)`}} />
         {loading ? <div className={styles.formLoading}><ReactLoading type={"spinningBubbles"} color={"#aeff02"} height={"10%"} width={"10%"}/></div> : <div className={styles.formMain}>
           <div>
             <div className={styles.orbit}></div>

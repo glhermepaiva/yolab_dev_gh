@@ -33,14 +33,16 @@
   position: absolute;
   top: 150px;
   z-index: 999;
-  /* animation: wave1 10s infinite linear; */
+  animation: wave1 10s infinite linear;
 }
 
-/* @keyframes wave1 {
-  0% {transform: translateY(0%);}
-  50% {transform: translateY(70%);}
-  100% {transform: translateY(0%);}
-} */
+@keyframes wave1 {
+  0% {transform: translateX(0%);}
+  25% {transform: translateX(5%);}
+  50% {transform: translateX(0%);}
+  75% {transform: translateX(-3%);}
+  100% {transform: translateX(0%);}
+}
 
 .carousel {
   margin: 50px 0 200px 0;

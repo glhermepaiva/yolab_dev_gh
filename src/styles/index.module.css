@@ -79,13 +79,17 @@
 
 @keyframes fadetext1 {
   0% {opacity: 1}
-  25% {opacity: 1}
+  10% {opacity: 1}
+  20% {opacity: 1}
   29% {opacity: 1}
   30% {opacity: 0}
+  40% {opacity: 0}
   50% {opacity: 0}
-  75% {opacity: 0}
-  84% {opacity: 0}
-  85% {opacity: 1}
+  59% {opacity: 0}
+  60% {opacity: 1}
+  70% {opacity: 1}
+  80% {opacity: 1}
+  90% {opacity: 1}
   100% {opacity: 1}
 }
 
@@ -99,13 +103,17 @@
 
 @keyframes fadetext2 {
   0% {opacity: 0}
-  25% {opacity: 0}
+  10% {opacity: 0}
+  20% {opacity: 0}
   29% {opacity: 0}
   30% {opacity: 1}
+  40% {opacity: 1}
   50% {opacity: 1}
-  75% {opacity: 1}
-  84% {opacity: 1}
-  85% {opacity: 0}
+  59% {opacity: 1}
+  60% {opacity: 0}
+  70% {opacity: 0}
+  80% {opacity: 0}
+  90% {opacity: 0}
   100% {opacity: 0}
 }
 
@@ -208,27 +216,63 @@
   animation: anim6 60s infinite;
 }
 
+.carouselRobo {
+  background-image: url(../assets/robo.png);
+  width: 449px;
+  height: 677px;
+  position: absolute;
+  top: 65px;
+  left: 705px;
+  z-index: 999;
+  opacity: 0;
+  animation: animRobo 60s infinite;
+}
+
 @keyframes anim5 {
   0% {opacity: 1}
-  25% {opacity: 1}
+  10% {opacity: 1}
+  20% {opacity: 1}
   29% {opacity: 1}
   30% {opacity: 0}
+  40% {opacity: 0}
   50% {opacity: 0}
-  75% {opacity: 0}
-  84% {opacity: 0}
-  85% {opacity: 1}
+  60% {opacity: 0}
+  70% {opacity: 0}
+  80% {opacity: 0}
+  90% {opacity: 0}
+  99% {opacity: 0}
   100% {opacity: 1}
 }
 
 @keyframes anim6 {
   0% {opacity: 0}
-  25% {opacity: 0}
+  10% {opacity: 0}
+  20% {opacity: 0}
   29% {opacity: 0}
   30% {opacity: 1}
+  40% {opacity: 1}
   50% {opacity: 1}
-  75% {opacity: 1}
-  84% {opacity: 1}
-  85% {opacity: 0}
+  59% {opacity: 1}
+  60% {opacity: 0}
+  70% {opacity: 0}
+  80% {opacity: 0}
+  90% {opacity: 0}
+  100% {opacity: 0}
+}
+
+@keyframes animRobo {
+  0% {opacity: 0}
+  10% {opacity: 0}
+  20% {opacity: 0}
+  30% {opacity: 0}
+  40% {opacity: 0}
+  50% {opacity: 0}
+  59% {opacity: 0}
+  60% {opacity: 1}
+  70% {opacity: 1}
+  80% {opacity: 1}
+  90% {opacity: 1}
+  99% {opacity: 1}
   100% {opacity: 0}
 }
 

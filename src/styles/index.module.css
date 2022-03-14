@@ -1205,11 +1205,10 @@
     right: 150px;
     transform: scale(0.9);
   }
-  
-  .carou20lSeloYoLogo {
-    top: 190px;
+
+  .carouselSeloYoLogo {
+    top: 200px;
     right: 195px;
-    transform: scale(0.9);
   }
 
   .welcome {

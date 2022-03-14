@@ -127,75 +127,6 @@ export default function LandingPage() {
     return windowSize;
   }
 
-  const size = useWindowSize();
-
-  function renderObjectSize() {
-    if (size.width < 720){
-        return (
-            <div className={styles.drawingGirl} >
-                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.4)`}} />
-                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.4)`}} />
-                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.4)`}} />
-                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.4)`}} />
-                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.1}px) scale(0.4)`}} />
-                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.4)`}} />
-                    <div className={styles.drawingGirlTable} />
-            </div>
-        )
-    }
-
-    if (size.width >= 720 && size.width < 1200){
-        return (
-            <div className={styles.drawingGirl} >
-                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.6)`}} />
-                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.6)`}} />
-                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.6)`}} />
-                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.6)`}} />
-                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.3}px) scale(0.6)`}} />
-                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.6)`}} />
-                    <div className={styles.drawingGirlTable} />
-            </div>
-        )
-    }
-
-    if (size.width >= 1200 && size.width < 1600){
-        return (
-            <div className={styles.drawingGirl} >
-                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.7)`}} />
-                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.7)`}} />
-                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.7)`}} />
-                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.7)`}} />
-                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.3}px) scale(0.7)`}} />
-                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.7)`}} />
-                    <div className={styles.drawingGirlTable} />
-            </div>
-        )
-    }
-
-    if (size.width >= 1600 && size.width < 1900){
-        return (
-            <div className={styles.drawingGirl} >
-                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.9)`}} />
-                    <div className={styles.drawingGirlCloudTop} style={{transform: `translateX(${offsetY * 0.3}px) scale(0.9)`}} />
-                    <div className={styles.drawingGirlCloudRight} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.9)`}} />
-                    <div className={styles.drawingGirlCloudLeft} style={{transform: `translateX(${offsetY * -0.2}px) scale(0.9)`}} />
-                    <div className={styles.drawingGirlBalloon} style={{transform: `translateY(${offsetY * -0.3}px) scale(0.9)`}} />
-                    <div className={styles.drawingGirlClock} style={{transform: `rotate(${offsetY / 2}deg) scale(0.9)`}} />
-                    <div className={styles.drawingGirlTable} />
-            </div>
-        )
-    }
-
-    if (size.width >= 1900){
-        return (
-            <div className={styles.drawingGirl} >
-                    <div className={styles.drawingGirlRocket} style={{transform: `translateY(${offsetY * -0.5}px) translateX(${offsetY * -0.2}px) scale(0.9)`}} />
-            </div>
-        )
-    }
-}
-
-
   const [soundOn, setSoundOn] = useState(false)
 
   const sound = new Howl({
@@ -227,6 +158,7 @@ export default function LandingPage() {
       <div className={styles.carouselSmartphone} />
       <div className={styles.carouselTenis} />
       <div className={styles.carouselCerebro} />
+      <div className={styles.carouselRobo} />
       <div className={styles.carousel}>
         <div className={styles.carouselLine1} />
         <div className={styles.carouselTextLine1}>

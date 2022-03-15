@@ -33,16 +33,7 @@
   position: absolute;
   top: 150px;
   z-index: 999;
-  /* animation: wave1 10s infinite linear; */
 }
-
-/* @keyframes wave1 {
-  0% {transform: translateX(0%);}
-  25% {transform: translateX(5%);}
-  50% {transform: translateX(0%);}
-  75% {transform: translateX(-3%);}
-  100% {transform: translateX(0%);}
-} */
 
 .carousel {
   margin: 50px 0 200px 0;
@@ -197,13 +188,35 @@
 
 .carouselTenis {
   background-image: url(../assets/tenis.png);
-  width: 448px;
-  height: 680px;
+  width: 334px;
+  height: 501px;
   position: absolute;
-  top: 50px;
+  top: 230px;
   left: 790px;
   z-index: 999;
+  animation: anim5tenis 60s infinite;
+}
+
+.carouselTenisTexto {
+  background-image: url(../assets/tenistexto.png);
+  width: 403px;
+  height: 332px;
+  position: absolute;
+  top: 50px;
+  left: 820px;
+  z-index: 999;
   animation: anim5 60s infinite;
+}
+
+.carouselTenisTexto2 {
+  background-image: url(../assets/tenistexto.png);
+  width: 403px;
+  height: 332px;
+  position: absolute;
+  top: 50px;
+  left: 820px;
+  z-index: 999;
+  animation: anim5texto2 60s infinite;
 }
 
 .carouselCerebro {
@@ -234,6 +247,50 @@
   0% {opacity: 1}
   10% {opacity: 1}
   20% {opacity: 1}
+  29% {opacity: 1}
+  30% {opacity: 0}
+  40% {opacity: 0}
+  50% {opacity: 0}
+  60% {opacity: 0}
+  70% {opacity: 0}
+  80% {opacity: 0}
+  90% {opacity: 0}
+  99% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes anim5tenis {
+  0% {opacity: 1}
+  10% {opacity: 1}
+  20% {opacity: 1}
+  10% {transform: rotate(10deg) translateY(3%)}
+  20% {transform: rotate(-10deg) translateY(3%)}
+  30% {transform: rotate(0deg)}
+  29% {opacity: 1}
+  30% {opacity: 0}
+  40% {opacity: 0}
+  50% {opacity: 0}
+  60% {opacity: 0}
+  70% {opacity: 0}
+  80% {opacity: 0}
+  90% {opacity: 0}
+  99% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes anim5texto2 {
+  0% {opacity: 1}
+  4% {opacity: 1}
+  5% {opacity: 0}
+  9% {opacity: 0}
+  10% {opacity: 1}
+  14% {opacity: 1}
+  15% {opacity: 0}
+  19% {opacity: 0}
+  20% {opacity: 1}
+  24% {opacity: 1}
+  25% {opacity: 0}
+  28% {opacity: 0}
   29% {opacity: 1}
   30% {opacity: 0}
   40% {opacity: 0}
@@ -334,15 +391,7 @@
   position: absolute;
   top: 1220px;
   left: 0;
-  /* animation: wave2 15s infinite linear; */
 }
-
-/* @keyframes wave2 {
-  0% {transform: translateY(0%);}
-  33% {transform: translateY(-50%);}
-  66% {transform: translateY(50%);}
-  100% {transform: translateY(0%);}
-} */
 
 
 .welcomeImage {
@@ -441,15 +490,7 @@
   position: absolute;
   top: 1300px;
   left: 0;
-  /* animation: wave3 12s infinite linear; */
 }
-
-/* @keyframes wave3 {
-  0% {transform: translateY(0%);}
-  33% {transform: translateY(90%);}
-  80% {transform: translateY(-90%);}
-  100% {transform: translateY(0%);}
-} */
 
 .formMain {
   display: flex;

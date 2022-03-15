@@ -156,7 +156,11 @@ export default function LandingPage() {
       </div>
       <div className={styles.wave1} style={{transform: `translateY(${offsetY * 0.3}px)`}} />
       <div className={styles.carouselSmartphone} />
-      <div className={styles.carouselTenis} />
+      <div>
+        <div className={styles.carouselTenis} />
+        <div className={styles.carouselTenisTexto} />
+        <div className={styles.carouselTenisTexto2} />
+      </div>
       <div className={styles.carouselCerebro} />
       <div className={styles.carouselRobo} />
       <div className={styles.carousel}>

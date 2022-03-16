@@ -161,8 +161,24 @@ export default function LandingPage() {
         <div className={styles.carouselTenisTexto} />
         <div className={styles.carouselTenisTexto2} />
       </div>
-      <div className={styles.carouselCerebro} />
-      <div className={styles.carouselRobo} />
+      <div>
+        <div className={styles.carouselCerebro} />
+        <div className={styles.carouselCerebroTexto1} />
+        <div className={styles.carouselCerebroTexto12} />
+        <div className={styles.carouselCerebroTexto2} />
+        <div className={styles.carouselCerebroMaoDir} />
+        <div className={styles.carouselCerebroMaoEsq} />
+      </div>
+      <div>
+        <div className={styles.carouselRobo} />
+        <div className={styles.carouselRoboTexto1} />
+        <div className={styles.carouselRoboTexto12} />
+        <div className={styles.carouselRoboTexto2} />
+        <div className={styles.carouselRoboSombras} />
+        <div className={styles.carouselRoboDado1} />
+        <div className={styles.carouselRoboDado2} />
+        <div className={styles.carouselRoboDado3} />
+      </div>
       <div className={styles.carousel}>
         <div className={styles.carouselLine1} />
         <div className={styles.carouselTextLine1}>

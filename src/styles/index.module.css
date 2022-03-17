@@ -607,10 +607,13 @@
   59% {opacity: 0}
   60% {transform: scale(0.1)}
   70% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
-  76% {transform: scale(1) translateY(200%) translateX(-190%) rotate(340deg)}
-  84% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
-  92% {transform: scale(1) translateY(200%) translateX(-190%) rotate(340deg)}
-  100% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
+  76% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
+  80% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
+  84% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
+  88% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
+  92% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
+  96% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
+  100% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
   60% {opacity: 1}
   70% {opacity: 1}
   80% {opacity: 1}

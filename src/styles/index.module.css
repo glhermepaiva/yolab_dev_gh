@@ -238,7 +238,7 @@
   height: 305px;
   position: absolute;
   top: 65px;
-  left: 810px;
+  left: 815px;
   z-index: 999;
   opacity: 0;
   animation: anim6 60s infinite;
@@ -250,7 +250,7 @@
   height: 305px;
   position: absolute;
   top: 65px;
-  left: 810px;
+  left: 815px;
   z-index: 999;
   opacity: 0;
   animation: anim6texto12 60s infinite;
@@ -262,7 +262,7 @@
   height: 77px;
   position: absolute;
   top: 250px;
-  left: 890px;
+  left: 895px;
   z-index: 999;
   opacity: 0;
   animation: anim6 60s infinite;
@@ -359,7 +359,7 @@
   width: 74px;
   height: 74px;
   position: absolute;
-  top: 380px;
+  top: 390px;
   left: 1020px;
   z-index: 999;
   opacity: 0;
@@ -371,7 +371,7 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 380px;
+  top: 390px;
   left: 1020px;
   z-index: 999;
   opacity: 0;
@@ -383,7 +383,7 @@
   width: 80px;
   height: 80px;
   position: absolute;
-  top: 380px;
+  top: 390px;
   left: 1020px;
   z-index: 999;
   opacity: 0;
@@ -584,7 +584,7 @@
   40% {opacity: 0}
   50% {opacity: 0}
   59% {opacity: 0}
-  60% {transform: scale(0.1)}
+  60% {transform: scale(0.1) rotate(45deg)}
   70% {transform: scale(1) translateY(130%) translateX(-50%)}
   80% {transform: scale(1) translateY(130%) translateX(-50%)}
   90% {transform: scale(1) translateY(130%) translateX(-50%)}
@@ -606,9 +606,10 @@
   50% {opacity: 0}
   59% {opacity: 0}
   60% {transform: scale(0.1)}
-  70% {transform: scale(1) translateY(200%) translateX(-190%) rotate(90deg)}
-  80% {transform: scale(1) translateY(200%) translateX(-190%) rotate(180deg)}
-  90% {transform: scale(1) translateY(200%) translateX(-190%) rotate(270deg)}
+  70% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
+  76% {transform: scale(1) translateY(200%) translateX(-190%) rotate(340deg)}
+  84% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
+  92% {transform: scale(1) translateY(200%) translateX(-190%) rotate(340deg)}
   100% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
   60% {opacity: 1}
   70% {opacity: 1}
@@ -627,10 +628,10 @@
   50% {opacity: 0}
   59% {opacity: 0}
   60% {transform: scale(0.1)}
-  70% {transform: scale(1) translateY(200%) translateX(-50%) rotate(90deg)}
-  80% {transform: scale(1) translateY(200%) translateX(-50%) rotate(180deg)}
-  90% {transform: scale(1) translateY(200%) translateX(-50%) rotate(270deg)}
-  100% {transform: scale(1) translateY(200%) translateX(-50%) rotate(360deg)}
+  70% {transform: scale(1) translateY(230%) translateX(-40%) rotate(360deg)}
+  80% {transform: scale(1) translateY(230%) translateX(-40%) rotate(300deg)}
+  90% {transform: scale(1) translateY(230%) translateX(-40%) rotate(360deg)}
+  100% {transform: scale(1) translateY(230%) translateX(-40%) rotate(300deg)}
   60% {opacity: 1}
   70% {opacity: 1}
   80% {opacity: 1}
@@ -648,10 +649,13 @@
   50% {opacity: 0}
   59% {opacity: 0}
   60% {transform: scale(0.1)}
-  70% {transform: scale(1) translateY(230%) translateX(-60%) rotate(90deg)}
-  80% {transform: scale(1) translateY(230%) translateX(-60%) rotate(180deg)}
-  90% {transform: scale(1) translateY(230%) translateX(-60%) rotate(270deg)}
-  100% {transform: scale(1) translateY(230%) translateX(-60%) rotate(360deg)}
+  70% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
+  75% {transform: scale(1) translateY(240%) translateX(-60%) rotate(420deg)}
+  80% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
+  85% {transform: scale(1) translateY(240%) translateX(-60%) rotate(420deg)}
+  90% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
+  95% {transform: scale(1) translateY(240%) translateX(-60%) rotate(420deg)}
+  100% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
   60% {opacity: 1}
   70% {opacity: 1}
   80% {opacity: 1}

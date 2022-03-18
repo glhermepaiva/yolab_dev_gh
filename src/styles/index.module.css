@@ -198,6 +198,22 @@
   transform-origin: bottom center;
 }
 
+@keyframes anim5tenis {
+  0% {opacity: 1}
+  10% {opacity: 1}
+  20% {opacity: 1}
+  5% {transform: rotate(5deg) translateY(3%)}
+  10% {transform: rotate(-5deg)}
+  15% {transform: rotate(5deg) translateY(3%)}
+  20% {transform: rotate(-5deg)}
+  25% {transform: rotate(5deg) translateY(3%)}
+  30% {transform: rotate(-5deg)}
+  29% {opacity: 1}
+  30% {opacity: 0}
+  99% {opacity: 0}
+  100% {opacity: 1}
+}
+
 .carouselTenisTexto {
   background-image: url(../assets/tenistexto.png);
   width: 403px;
@@ -209,6 +225,14 @@
   animation: anim5 60s infinite;
 }
 
+@keyframes anim5 {
+  0% {opacity: 0.5}
+  27% {opacity: 0.5}
+  28% {opacity: 0}
+  99% {opacity: 0}
+  100% {opacity: 0.5}
+}
+
 .carouselTenisTexto2 {
   background-image: url(../assets/tenistexto.png);
   width: 403px;
@@ -217,8 +241,18 @@
   top: 50px;
   left: 820px;
   z-index: 998;
-  animation: anim5texto2 60s infinite, neonblink 5s infinite;
+  animation: anim5texto2 60s infinite, neonblink 3s infinite;
   filter: brightness(200%);
+}
+
+@keyframes anim5texto2 {
+  0% {visibility: hidden}
+  1% {visibility: visible}
+  28% {visibility: visible}
+  29% {visibility: hidden}
+  30% {visibility: hidden;}
+  99% {visibility: hidden}
+  100% {visibility: visible}
 }
 
 .carouselCerebro {
@@ -233,6 +267,15 @@
   animation: anim6 60s infinite;
 }
 
+@keyframes anim6 {
+  0% {opacity: 0}
+  29% {opacity: 0}
+  30% {opacity: 1}
+  57% {opacity: 1}
+  58% {opacity: 0}
+  100% {opacity: 0}
+}
+
 .carouselCerebroTexto1 {
   background-image: url(../assets/cerebrotexto1.png);
   width: 420px;
@@ -242,7 +285,16 @@
   left: 815px;
   z-index: 999;
   opacity: 0;
-  animation: anim6 60s infinite;
+  animation: anim6texto1 60s infinite;
+}
+
+@keyframes anim6texto1 {
+  0% {opacity: 0}
+  29% {opacity: 0}
+  30% {opacity: 0.5}
+  57% {opacity: 0.5}
+  58% {opacity: 0}
+  100% {opacity: 0}
 }
 
 .carouselCerebroTexto12 {
@@ -254,8 +306,17 @@
   left: 815px;
   z-index: 999;
   opacity: 0;
-  animation: anim6texto12 60s infinite, neonblink 5s infinite;
+  animation: anim6texto12 60s infinite, neonblink 3s infinite;
   filter: brightness(200%);
+}
+
+@keyframes anim6texto12 {
+  0% {visibility: hidden}
+  29% {visibility: hidden}
+  30% {visibility: visible}
+  57% {visibility: visible}
+  58% {visibility: hidden}
+  100% {visibility: hidden}
 }
 
 .carouselCerebroTexto2 {
@@ -283,6 +344,20 @@
   transform-origin: right center;
 }
 
+@keyframes anim6maodir {
+  0% {opacity: 0}
+  29% {opacity: 0}
+  30% {opacity: 1}
+  57% {opacity: 1}
+  58% {opacity: 0}
+  100% {opacity: 0}
+  30% {transform: rotate(-20deg);}
+  38% {transform: rotate(20deg);}
+  46% {transform: rotate(-20deg);}
+  54% {transform: rotate(20deg);}
+  60% {transform: rotate(-20deg);}
+}
+
 .carouselCerebroMaoEsq {
   background-image: url(../assets/cerebromaoesq.png);
   width: 143px;
@@ -294,6 +369,20 @@
   opacity: 0;
   animation: anim6maoesq 60s infinite;
   transform-origin: right center;
+}
+
+@keyframes anim6maoesq {
+  0% {opacity: 0}
+  29% {opacity: 0}
+  30% {opacity: 1}
+  57% {opacity: 1}
+  58% {opacity: 0}
+  100% {opacity: 0}
+  30% {transform: rotate(10deg);}
+  38% {transform: rotate(-20deg);}
+  46% {transform: rotate(20deg);}
+  54% {transform: rotate(-20deg);}
+  60% {transform: rotate(20deg);}
 }
 
 .carouselRobo {
@@ -308,6 +397,14 @@
   animation: animRobo 60s infinite;
 }
 
+@keyframes animRobo {
+  0% {opacity: 0}
+  57% {opacity: 0}
+  58% {opacity: 1}
+  99% {opacity: 1}
+  100% {opacity: 0}
+}
+
 .carouselRoboTexto1 {
   background-image: url(../assets/robotexto1.png);
   width: 405px;
@@ -317,7 +414,15 @@
   left: 820px;
   z-index: 999;
   opacity: 0;
-  animation: animRobo 60s infinite;
+  animation: animRobotexto1 60s infinite;
+}
+
+@keyframes animRobotexto1 {
+  0% {opacity: 0}
+  57% {opacity: 0}
+  58% {opacity: 0.5}
+  99% {opacity: 0.5}
+  100% {opacity: 0}
 }
 
 .carouselRoboTexto12 {
@@ -329,8 +434,17 @@
   left: 820px;
   z-index: 999;
   opacity: 0;
-  animation: animRobotexto12 60s infinite, neonblink 5s infinite;
+  animation: animRobotexto12 60s infinite, neonblink 3s infinite;
   filter: brightness(200%);
+}
+
+@keyframes animRobotexto12 {
+  0% {visibility: hidden}
+  58% {visibility: hidden}
+  59% {visibility: visible}
+  98% {visibility: visible}
+  99% {visibility: hidden}
+  100% {visibility: hidden}
 }
 
 .carouselRoboTexto2 {
@@ -393,60 +507,6 @@
   animation: animRoboDado3 60s infinite;
 }
 
-@keyframes anim5 {
-  0% {opacity: 1}
-  10% {opacity: 1}
-  20% {opacity: 1}
-  27% {opacity: 1}
-  28% {opacity: 0}
-  29% {opacity: 0}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  60% {opacity: 0}
-  70% {opacity: 0}
-  80% {opacity: 0}
-  90% {opacity: 0}
-  99% {opacity: 0}
-  100% {opacity: 1}
-}
-
-@keyframes anim5tenis {
-  0% {opacity: 1}
-  10% {opacity: 1}
-  20% {opacity: 1}
-  5% {transform: rotate(5deg) translateY(3%)}
-  10% {transform: rotate(-5deg)}
-  15% {transform: rotate(5deg) translateY(3%)}
-  20% {transform: rotate(-5deg)}
-  25% {transform: rotate(5deg) translateY(3%)}
-  30% {transform: rotate(-5deg)}
-  29% {opacity: 1}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  60% {opacity: 0}
-  70% {opacity: 0}
-  80% {opacity: 0}
-  90% {opacity: 0}
-  99% {opacity: 0}
-  100% {opacity: 1}
-}
-
-@keyframes anim5texto2 {
-  0% {visibility: hidden}
-
-  1% {visibility: visible}
-
-  28% {visibility: visible}
-  29% {visibility: hidden}
-
-  30% {visibility: hidden;}
-  99% {visibility: hidden}
-  
-  100% {visibility: visible}
-}
-
 @keyframes neonblink {
   0% {opacity: 0}
   5% {opacity: 1}
@@ -470,80 +530,12 @@
   100% {opacity: 1}
 }
 
-@keyframes anim6 {
-  0% {opacity: 0}
-  29% {opacity: 0}
-  30% {opacity: 1}
-  57% {opacity: 1}
-  58% {opacity: 0}
-  100% {opacity: 0}
-}
-
-@keyframes anim6maodir {
-  0% {opacity: 0}
-  29% {opacity: 0}
-  30% {opacity: 1}
-  57% {opacity: 1}
-  58% {opacity: 0}
-  100% {opacity: 0}
-
-  30% {transform: rotate(-20deg);}
-  38% {transform: rotate(20deg);}
-  46% {transform: rotate(-20deg);}
-  54% {transform: rotate(20deg);}
-  60% {transform: rotate(-20deg);}
-}
-
-@keyframes anim6maoesq {
-  0% {opacity: 0}
-  29% {opacity: 0}
-  30% {opacity: 1}
-  57% {opacity: 1}
-  58% {opacity: 0}
-  100% {opacity: 0}
-
-  30% {transform: rotate(10deg);}
-  38% {transform: rotate(-20deg);}
-  46% {transform: rotate(20deg);}
-  54% {transform: rotate(-20deg);}
-  60% {transform: rotate(20deg);}
-}
-
-@keyframes anim6texto12 {
-  0% {visibility: hidden}
-  29% {visibility: hidden}
-
-  30% {visibility: visible}
-  57% {visibility: visible}
-
-  58% {visibility: hidden}
-  100% {visibility: hidden}
-}
-
-@keyframes animRobo {
-  0% {opacity: 0}
-  57% {opacity: 0}
-  58% {opacity: 1}
-  99% {opacity: 1}
-  100% {opacity: 0}
-}
-
-@keyframes animRobotexto12 {
-  0% {visibility: hidden}
-  58% {visibility: hidden}
-  59% {visibility: visible}
-  98% {visibility: visible}
-  99% {visibility: hidden}
-  100% {visibility: hidden}
-}
-
 @keyframes animRoboSombras {
   0% {opacity: 0}
   57% {opacity: 0}
   58% {opacity: 1}
   99% {opacity: 1}
   100% {opacity: 0}
-
   58% {transform: scale(0.1) rotate(45deg)}
   70% {transform: scale(1) translateY(130%) translateX(-50%)}
   80% {transform: scale(1) translateY(130%) translateX(-50%)}
@@ -557,7 +549,6 @@
   58% {opacity: 1}
   99% {opacity: 1}
   100% {opacity: 0}
-
   58% {transform: scale(0.1)}
   70% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
   76% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
@@ -575,7 +566,6 @@
   58% {opacity: 1}
   99% {opacity: 1}
   100% {opacity: 0}
-
   58% {transform: scale(0.1)}
   70% {transform: scale(1) translateY(230%) translateX(-40%) rotate(360deg)}
   80% {transform: scale(1) translateY(230%) translateX(-40%) rotate(300deg)}
@@ -589,7 +579,6 @@
   58% {opacity: 1}
   99% {opacity: 1}
   100% {opacity: 0}
-
   58% {transform: scale(0.1)}
   70% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
   75% {transform: scale(1) translateY(240%) translateX(-60%) rotate(420deg)}

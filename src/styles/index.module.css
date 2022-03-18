@@ -524,7 +524,8 @@
   0% {opacity: 0}
   57% {opacity: 0}
   58% {opacity: 1}
-  99% {opacity: 1}
+  98% {opacity: 1}
+  99% {opacity: 0}
   100% {opacity: 0}
 }
 
@@ -532,7 +533,8 @@
   0% {visibility: hidden}
   58% {visibility: hidden}
   59% {visibility: visible}
-  99% {visibility: visible}
+  98% {visibility: visible}
+  99% {visibility: hidden}
   100% {visibility: hidden}
 }
 

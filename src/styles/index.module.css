@@ -217,7 +217,7 @@
   top: 50px;
   left: 820px;
   z-index: 998;
-  animation: anim5texto2 60s infinite;
+  animation: anim5texto2 60s infinite, neonblink 5s infinite;
   filter: brightness(200%);
 }
 
@@ -254,7 +254,7 @@
   left: 815px;
   z-index: 999;
   opacity: 0;
-  animation: anim6texto12 60s infinite;
+  animation: anim6texto12 60s infinite, neonblink 5s infinite;
   filter: brightness(200%);
 }
 
@@ -329,7 +329,7 @@
   left: 820px;
   z-index: 999;
   opacity: 0;
-  animation: animRobotexto12 60s infinite;
+  animation: animRobotexto12 60s infinite, neonblink 5s infinite;
   filter: brightness(200%);
 }
 
@@ -397,7 +397,9 @@
   0% {opacity: 1}
   10% {opacity: 1}
   20% {opacity: 1}
-  29% {opacity: 1}
+  27% {opacity: 1}
+  28% {opacity: 0}
+  29% {opacity: 0}
   30% {opacity: 0}
   40% {opacity: 0}
   50% {opacity: 0}
@@ -432,215 +434,130 @@
 }
 
 @keyframes anim5texto2 {
+  0% {visibility: hidden}
+
+  1% {visibility: visible}
+
+  28% {visibility: visible}
+  29% {visibility: hidden}
+
+  30% {visibility: hidden;}
+  99% {visibility: hidden}
+  
+  100% {visibility: visible}
+}
+
+@keyframes neonblink {
   0% {opacity: 0}
-  1% {opacity: 1}
-  2% {opacity: 0.6}
-  3% {opacity: 1}
-  4% {opacity: 0.2}
   5% {opacity: 1}
-  9% {opacity: 1}
-  10% {opacity: 0.2}
-  11% {opacity: 1}
-  12% {opacity: 0.6}
-  13% {opacity: 1}
-  18% {opacity: 1}
-  19% {opacity: 0.4}
-  20% {opacity: 1}
-  24% {opacity: 1}
-  25% {opacity: 0.6}
-  26% {opacity: 1}
-  27% {opacity: 0.4}
-  28% {opacity: 1}
-  29% {opacity: 0.2}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  60% {opacity: 0}
-  70% {opacity: 0}
-  80% {opacity: 0}
-  90% {opacity: 0}
-  99% {opacity: 0}
+  15% {opacity: 1}
+  16% {opacity: 0}
+  20% {opacity: 0.2}
+  25% {opacity: 1}
+  30% {opacity: 1}
+  35% {opacity: 0.2}
+  40% {opacity: 1}
+  45% {opacity: 0.6}
+  50% {opacity: 1}
+  65% {opacity: 1}
+  66% {opacity: 0.2}
+  70% {opacity: 1}
+  75% {opacity: 0.6}
+  80% {opacity: 1}
+  90% {opacity: 1}
+  91% {opacity: 0.6}
+  95% {opacity: 0.2}
   100% {opacity: 1}
 }
 
 @keyframes anim6 {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
   29% {opacity: 0}
   30% {opacity: 1}
-  40% {opacity: 1}
-  50% {opacity: 1}
-  59% {opacity: 1}
-  60% {opacity: 0}
-  70% {opacity: 0}
-  80% {opacity: 0}
-  90% {opacity: 0}
+  57% {opacity: 1}
+  58% {opacity: 0}
   100% {opacity: 0}
 }
 
 @keyframes anim6maodir {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
   29% {opacity: 0}
   30% {opacity: 1}
-  40% {opacity: 1}
-  50% {opacity: 1}
-  59% {opacity: 1}
+  57% {opacity: 1}
+  58% {opacity: 0}
+  100% {opacity: 0}
+
   30% {transform: rotate(-20deg);}
   38% {transform: rotate(20deg);}
   46% {transform: rotate(-20deg);}
   54% {transform: rotate(20deg);}
   60% {transform: rotate(-20deg);}
-  60% {opacity: 0}
-  70% {opacity: 0}
-  80% {opacity: 0}
-  90% {opacity: 0}
-  100% {opacity: 0}
 }
 
 @keyframes anim6maoesq {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
   29% {opacity: 0}
   30% {opacity: 1}
-  40% {opacity: 1}
-  50% {opacity: 1}
-  59% {opacity: 1}
+  57% {opacity: 1}
+  58% {opacity: 0}
+  100% {opacity: 0}
+
   30% {transform: rotate(10deg);}
   38% {transform: rotate(-20deg);}
   46% {transform: rotate(20deg);}
   54% {transform: rotate(-20deg);}
   60% {transform: rotate(20deg);}
-  60% {opacity: 0}
-  70% {opacity: 0}
-  80% {opacity: 0}
-  90% {opacity: 0}
-  100% {opacity: 0}
 }
 
 @keyframes anim6texto12 {
-  0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
-  29% {opacity: 0}
+  0% {visibility: hidden}
+  29% {visibility: hidden}
 
-  30% {opacity: 0}
-  31% {opacity: 1}
-  32% {opacity: 0.6}
-  33% {opacity: 1}
-  34% {opacity: 0.2}
-  35% {opacity: 1}
-  39% {opacity: 1}
-  40% {opacity: 0.2}
-  41% {opacity: 1}
-  42% {opacity: 0.6}
-  43% {opacity: 1}
-  48% {opacity: 1}
-  49% {opacity: 0.4}
-  50% {opacity: 1}
-  54% {opacity: 1}
-  55% {opacity: 0.6}
-  56% {opacity: 1}
-  57% {opacity: 0.4}
-  58% {opacity: 1}
-  59% {opacity: 0.2}
+  30% {visibility: visible}
+  58% {visibility: visible}
 
-  60% {opacity: 0}
-  70% {opacity: 0}
-  80% {opacity: 0}
-  90% {opacity: 0}
-  100% {opacity: 0}
+  59% {visibility: hidden}
+  100% {visibility: hidden}
 }
 
 @keyframes animRobo {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  59% {opacity: 0}
-  60% {opacity: 1}
-  70% {opacity: 1}
-  80% {opacity: 1}
-  90% {opacity: 1}
+  57% {opacity: 0}
+  58% {opacity: 1}
   99% {opacity: 1}
   100% {opacity: 0}
 }
 
 @keyframes animRobotexto12 {
-  0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  59% {opacity: 0}
-  
-  60% {opacity: 0}
-  61% {opacity: 1}
-  62% {opacity: 0.6}
-  63% {opacity: 1}
-  64% {opacity: 0.2}
-  65% {opacity: 1}
-  69% {opacity: 1}
-  70% {opacity: 0.2}
-  71% {opacity: 1}
-  72% {opacity: 0.6}
-  73% {opacity: 1}
-  78% {opacity: 1}
-  79% {opacity: 0.4}
-  80% {opacity: 1}
-  84% {opacity: 1}
-  85% {opacity: 0.6}
-  86% {opacity: 1}
-  87% {opacity: 0.4}
-  88% {opacity: 1}
-  89% {opacity: 0.2}
-  90% {opacity: 1}
-  94% {opacity: 1}
-  95% {opacity: 0.6}
-  96% {opacity: 1}
-  97% {opacity: 0.4}
-  98% {opacity: 1}
-  99% {opacity: 0.2}
-  
-  100% {opacity: 0}
+  0% {visibility: hidden}
+  58% {visibility: hidden}
+  59% {visibility: visible}
+  99% {visibility: visible}
+  100% {visibility: hidden}
 }
 
 @keyframes animRoboSombras {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  59% {opacity: 0}
-  60% {transform: scale(0.1) rotate(45deg)}
+  57% {opacity: 0}
+  58% {opacity: 1}
+  99% {opacity: 1}
+  100% {opacity: 0}
+
+  58% {transform: scale(0.1) rotate(45deg)}
   70% {transform: scale(1) translateY(130%) translateX(-50%)}
   80% {transform: scale(1) translateY(130%) translateX(-50%)}
   90% {transform: scale(1) translateY(130%) translateX(-50%)}
   100% {transform: scale(1) translateY(130%) translateX(-50%)}
-  60% {opacity: 1}
-  70% {opacity: 1}
-  80% {opacity: 1}
-  90% {opacity: 1}
-  99% {opacity: 1}
-  100% {opacity: 0}
 }
 
 @keyframes animRoboDado1 {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  59% {opacity: 0}
-  60% {transform: scale(0.1)}
+  57% {opacity: 0}
+  58% {opacity: 1}
+  99% {opacity: 1}
+  100% {opacity: 0}
+
+  58% {transform: scale(0.1)}
   70% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
   76% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
   80% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
@@ -649,44 +566,30 @@
   92% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
   96% {transform: scale(1) translateY(200%) translateX(-190%) rotate(360deg)}
   100% {transform: scale(1) translateY(200%) translateX(-190%) rotate(330deg)}
-  60% {opacity: 1}
-  70% {opacity: 1}
-  80% {opacity: 1}
-  90% {opacity: 1}
-  99% {opacity: 1}
-  100% {opacity: 0}
 }
 
 @keyframes animRoboDado2 {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  59% {opacity: 0}
-  60% {transform: scale(0.1)}
+  57% {opacity: 0}
+  58% {opacity: 1}
+  99% {opacity: 1}
+  100% {opacity: 0}
+
+  58% {transform: scale(0.1)}
   70% {transform: scale(1) translateY(230%) translateX(-40%) rotate(360deg)}
   80% {transform: scale(1) translateY(230%) translateX(-40%) rotate(300deg)}
   90% {transform: scale(1) translateY(230%) translateX(-40%) rotate(360deg)}
   100% {transform: scale(1) translateY(230%) translateX(-40%) rotate(300deg)}
-  60% {opacity: 1}
-  70% {opacity: 1}
-  80% {opacity: 1}
-  90% {opacity: 1}
-  99% {opacity: 1}
-  100% {opacity: 0}
 }
 
 @keyframes animRoboDado3 {
   0% {opacity: 0}
-  10% {opacity: 0}
-  20% {opacity: 0}
-  30% {opacity: 0}
-  40% {opacity: 0}
-  50% {opacity: 0}
-  59% {opacity: 0}
-  60% {transform: scale(0.1)}
+  57% {opacity: 0}
+  58% {opacity: 1}
+  99% {opacity: 1}
+  100% {opacity: 0}
+
+  58% {transform: scale(0.1)}
   70% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
   75% {transform: scale(1) translateY(240%) translateX(-60%) rotate(420deg)}
   80% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
@@ -694,12 +597,6 @@
   90% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
   95% {transform: scale(1) translateY(240%) translateX(-60%) rotate(420deg)}
   100% {transform: scale(1) translateY(240%) translateX(-60%) rotate(360deg)}
-  60% {opacity: 1}
-  70% {opacity: 1}
-  80% {opacity: 1}
-  90% {opacity: 1}
-  99% {opacity: 1}
-  100% {opacity: 0}
 }
 
 .carouselSeloYoFundo {

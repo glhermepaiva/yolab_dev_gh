@@ -1245,7 +1245,7 @@
   }
 
   .orbit {
-    margin: 1300px 0 50PX -70px;
+    margin: 1300px 0 50px 10px;
     transform: scale(0.9);
   }
   
@@ -1256,7 +1256,7 @@
   }
 
   .contactForm {
-    margin: 0px 0 0 -400px;
+    margin: 0px 0 0 -300px;
   }
 
   .contactFormTitle {
@@ -1292,7 +1292,7 @@
   }
 
   .contactInfo {
-    margin: 700px 0 0 -350px;
+    margin: 700px 0 0 -320px;
     transform: scale(0.9);
   }
 
@@ -1597,7 +1597,7 @@
   }
 
   .orbit {
-    margin: 500px 0 0 120px;
+    margin: 510px 0 0 180px;
     transform: scale(0.9);
   }
   
@@ -1608,7 +1608,7 @@
   }
 
   .contactForm {
-    margin: -500px 0 0 -500px;
+    margin: -500px 0 0 -480px;
   }
 
   .contactFormTitle {
@@ -1640,8 +1640,12 @@
   }
 
   .contactInfo {
-    margin: -370px 0 0 -50px;
-    transform: scale(0.9);
+    margin: -370px 0 0 -20px;
+    transform: scale(1);
+  }
+
+  .contactInfoEmail {
+    font-size: 20px;
   }
 
   .footer {
@@ -1902,7 +1906,7 @@
   }
 
   .orbit {
-    margin: 350px 0 0 -50px;
+    margin: 350px 0 0 0px;
     transform: scale(0.9);
   }
   
@@ -1913,7 +1917,7 @@
   }
 
   .contactForm {
-    margin: 0 0 0 -150px;
+    margin: 0 30px 0 -50px;
   }
 
   .contactFormTitle {
@@ -2203,7 +2207,7 @@
   
   .planet {
     top: 1950px;
-    left: 200px;
+    left: 190px;
   }
 
   .contactForm {
@@ -2496,8 +2500,8 @@
   }
   
   .planet {
-    top: 1910px;
-    left: 250px;
+    top: 1930px;
+    left: 220px;
   }
 
   .contactForm {
@@ -2774,7 +2778,7 @@
   
   .planet {
     top: 2150px;
-    left: 300px;
+    left: 270px;
   }
 
   .contactForm {
@@ -3044,7 +3048,7 @@
   
   .planet {
     top: 2150px;
-    left: 330px;
+    left: 300px;
   }
 
   .contactForm {

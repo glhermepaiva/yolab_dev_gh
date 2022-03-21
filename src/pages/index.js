@@ -237,7 +237,7 @@ export default function LandingPage() {
           </div>
           <div className={styles.contactInfo}>
             <div className={styles.contactInfoText}>Ou se preferir</div>
-            <div className={styles.contactInfoEmail}>yo@yolab.com</div>
+            <div className={styles.contactInfoEmail}>contato@yolab.com.br</div>
             <div className={styles.contactInfoSocial}>
               <div className={styles.contactInfoSocialIn} onClick={linkedinLink}/>
               <div className={styles.contactInfoSocialTt} onClick={instaLink}/>

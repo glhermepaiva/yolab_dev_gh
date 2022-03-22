@@ -10,8 +10,12 @@
 }
 
 .headerLogo {
-  font-size: 27px;
-  margin-bottom: -8px ;
+  background-image: url(../assets/logoyo.png);
+  width: 500px;
+  height: 500px;
+  transform: scale(0.25);
+  margin-bottom: -250px;
+  margin-left: -150px;
 }
 
 .headerSoundButton {

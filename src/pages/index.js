@@ -130,7 +130,7 @@ export default function LandingPage() {
   const [soundOn, setSoundOn] = useState(false)
 
   const sound = new Howl({
-    src: ['https://cdn.pixabay.com/download/audio/2021/02/01/audio_3620719b92.mp3?filename=moonlight-2526.mp3'],
+    src: ['https://cdn.pixabay.com/download/audio/2022/03/22/audio_3ed92a2f6c.mp3?filename=yomusic2-99296.mp3'],
     volume: 0.1,
     loop: true,
   });
@@ -151,7 +151,7 @@ export default function LandingPage() {
         <meta name='description' content='GET READY TO THE NEW' />
       </Head>
       <div className={styles.header}>
-        <div className={styles.headerLogo}>YO! LAB</div>
+        <div className={styles.headerLogo} />
         {soundOn ? <button className={styles.headerSoundButton} onClick={() => turnSoundOff()}>SOUND OFF</button> : <button className={styles.headerSoundButton} onClick={() => turnSoundOn()}>SOUND ON</button>}
       </div>
       <div className={styles.wave1} style={{transform: `translateY(${offsetY * 0.3}px)`}} />

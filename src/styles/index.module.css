@@ -2203,6 +2203,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 0px;
+    margin-left: 100px;
   }
 
   .orbit {
@@ -2211,11 +2212,11 @@
   
   .planet {
     top: 1950px;
-    left: 190px;
+    left: 220px;
   }
 
   .contactForm {
-    margin: 0 0 0 -150px;
+    margin: 0 0 0 -50px;
   }
 
   .contactFormTitle {
@@ -2497,6 +2498,7 @@
     display: flex;
     flex-direction: column;
     margin-top: -20px;
+    margin-left: 120px;
   }
 
   .orbit {
@@ -2505,7 +2507,7 @@
   
   .planet {
     top: 1930px;
-    left: 220px;
+    left: 300px;
   }
 
   .contactForm {

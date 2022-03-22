@@ -1252,7 +1252,7 @@
   }
 
   .orbit {
-    margin: 1300px 0 50px 10px;
+    margin: 1300px 0 50px 20px;
     transform: scale(0.9);
   }
   
@@ -1299,7 +1299,7 @@
   }
 
   .contactInfo {
-    margin: 700px 0 0 -320px;
+    margin: 700px 0 0 -325px;
     transform: scale(0.9);
   }
 

@@ -1,4 +1,4 @@
-# yolab
+# lp yolab
 
 LP desenvolvida em Next.js durante o mês de fevereiro de 2022 para a empresa YO! LAB.
 
